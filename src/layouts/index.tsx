@@ -2,7 +2,7 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import theme from './../theme';
-import { Header } from './../components';
+import { Cover, Header } from './../components';
 import './index.css';
 
 interface DefaultLayoutProps {
@@ -24,7 +24,9 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps> {
               },
             ]}
           />
-          <Header />
+          <Cover>
+            <Header />
+          </Cover>
           {this.props.children}
         </div>
       </ThemeProvider>

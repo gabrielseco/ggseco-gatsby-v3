@@ -2,7 +2,7 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #000;
+  background: transparent;
   border: 0;
   height: 4.68em;
   padding: 2.18em;
