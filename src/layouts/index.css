@@ -1,4 +1,11 @@
-html,body {
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Noto+Serif:400,700|Oxygen:400,700|Varela+Round');
+
+html,
+body {
+  line-height: 1.75em;
+  font-family: Oxygen, Arial, sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 300;
   margin: 0;
   padding: 0;
 }
