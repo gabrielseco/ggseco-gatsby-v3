@@ -5,7 +5,7 @@ export const Container = styled.section`
   max-width: 56.25em;
   position: relative;
   vertical-align: middle;
-  width: 43.75em;
+  width: 80%;
 `;
 
 export const Title = styled.h1`
@@ -13,8 +13,8 @@ export const Title = styled.h1`
   font-size: 2.75rem;
   font-weight: 600;
   font-family: ${props => props.theme.fonts.varela};
-  line-height: 3.25em;
-  margin: 10% 0 3.125em;
+  line-height: 3.25rem;
+  margin: 10% 0 3.125rem;
 `;
 
 export const Description = styled.p`
@@ -22,8 +22,8 @@ export const Description = styled.p`
   font-size: 1.4375rem;
   font-family: ${props => props.theme.fonts.varela};
   letter-spacing: -0.0625em;
-  line-height: 2.375em;
-  margin: 2.5em 0 2.1875em;
+  line-height: 2.375rem;
+  margin: 2.5rem 0 2.1875rem;
 `;
 
 export const Separator = styled.hr`

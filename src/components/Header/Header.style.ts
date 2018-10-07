@@ -4,8 +4,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background: transparent;
   border: 0;
-  height: 4.68em;
-  padding: 2.18em;
+  height: 4.6875em;
+  left: 0;
+  padding: 2.1875em;
+  position: absolute;
+  top: 0;
+  width: 100%;
 `;
 
 export const SuperLink = styled(Link)`
