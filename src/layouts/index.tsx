@@ -2,7 +2,7 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import theme from './../theme';
-import { Header } from './../components'
+import { Header } from './../components';
 import './index.css';
 
 interface DefaultLayoutProps {
