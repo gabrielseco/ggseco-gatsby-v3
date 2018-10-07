@@ -11,7 +11,7 @@ export const Container = styled.div`
 export const SuperLink = styled(Link)`
   color: ${props => props.theme.colors.white};
   font-family: ${props => props.theme.fonts.varela};
-  font-size: 1.125em;
+  font-size: 1.125rem;
   font-weight: 600;
   text-decoration: none;
 `;
