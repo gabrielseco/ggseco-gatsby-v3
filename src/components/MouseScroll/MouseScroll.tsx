@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Mouse, Scroll } from './MouseScroll.style'
+import { Mouse, Scroll } from './MouseScroll.style';
 
 const MouseScroll = () => (
   <Mouse>

@@ -29,11 +29,13 @@
     "format": "prettier --parser typescript --trailing-comma all --single-quote --write \"src/**/*.ts*\"",
     "generate:stateless": "node ./scripts/stateless.js",
     "generate:stateful": "node ./scripts/stateful.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "@types/react-helmet": "^5.0.7",
     "genmite": "^1.2.0",
+    "gh-pages": "^2.0.1",
     "husky": "^1.1.1",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3"

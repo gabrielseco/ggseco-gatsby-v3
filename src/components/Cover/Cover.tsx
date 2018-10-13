@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { BackgroundImage, Container } from './Cover.style';
+import logo from "./../../assets/img/cover.jpg";
 
 const Cover = ({ children }: { children: any }) => (
   <Container>
-    <BackgroundImage url="http://ggseco.com/wp-content/uploads/2016/11/hoodvista.jpg" />
+    <BackgroundImage url={logo} />
     {children}
   </Container>
 );

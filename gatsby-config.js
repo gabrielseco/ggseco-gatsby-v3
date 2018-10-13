@@ -7,4 +7,5 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-styled-components`
   ],
+  pathPrefix: `/ggseco-gatsby-v3`,
 }
