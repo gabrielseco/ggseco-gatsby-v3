@@ -1,7 +1,7 @@
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.header`
   background: transparent;
   border: 0;
   height: 4.6875em;

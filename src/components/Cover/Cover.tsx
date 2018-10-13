@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { BackgroundImage, Container } from './Cover.style';
-import logo from "./../../assets/img/cover.jpg";
+import logo from './../../assets/img/cover.jpg';
 
 const Cover = ({ children }: { children: any }) => (
   <Container>
