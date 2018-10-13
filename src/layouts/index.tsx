@@ -2,7 +2,13 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import theme from './../theme';
-import { Cover, CoverTitle, Footer, Header, MouseScroll } from './../components';
+import {
+  Cover,
+  CoverTitle,
+  Footer,
+  Header,
+  MouseScroll,
+} from './../components';
 import './index.css';
 
 interface DefaultLayoutProps {
@@ -26,11 +32,11 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps> {
           />
           <Cover>
             <Header />
-            <CoverTitle />
+            <CoverTitle title="Gabriel García Seco" description="Desarrollo Web | Music &amp; More" />
             <MouseScroll />
           </Cover>
           {this.props.children}
-          <Footer/>
+          <Footer />
         </div>
       </ThemeProvider>
     );

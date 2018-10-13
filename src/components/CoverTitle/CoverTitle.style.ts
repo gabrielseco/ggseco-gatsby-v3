@@ -24,6 +24,7 @@ export const Description = styled.p`
   letter-spacing: -0.0625em;
   line-height: 2.375rem;
   margin: 2.5rem 0 2.1875rem;
+  max-width: 30em;
 `;
 
 export const Separator = styled.hr`

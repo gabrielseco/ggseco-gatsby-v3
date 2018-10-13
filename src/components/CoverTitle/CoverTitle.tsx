@@ -2,15 +2,15 @@ import * as React from 'react';
 import Link from 'gatsby-link';
 import { Container, Description, Separator, Title } from './CoverTitle.style';
 
-const CoverTitle = () => (
+const CoverTitle = ({ title, description, separator = true}: { title: string, description: string, separator?: boolean}) => (
   <Container>
     <Link to="/">
-      <Title itemProp="headline">Gabriel García Seco</Title>
+      <Title itemProp="headline">{title}</Title>
     </Link>
     <Description itemProp="description">
-      Desarrollo Web | Music &amp; More
+      {description}
     </Description>
-    <Separator />
+    {separator && <Separator />}
   </Container>
 );
 
