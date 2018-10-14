@@ -34,6 +34,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
+    "@types/react-fontawesome": "^1.6.4",
     "@types/react-helmet": "^5.0.7",
     "genmite": "^1.2.0",
     "gh-pages": "^2.0.1",
