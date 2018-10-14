@@ -32,7 +32,10 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps> {
           />
           <Cover>
             <Header />
-            <CoverTitle title="Gabriel García Seco" description="Desarrollo Web | Music &amp; More" />
+            <CoverTitle
+              title="Gabriel García Seco"
+              description="Desarrollo Web | Music &amp; More"
+            />
             <MouseScroll />
           </Cover>
           {this.props.children}

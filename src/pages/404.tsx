@@ -5,34 +5,34 @@ import theme from './../theme';
 import {
   Cover,
   CoverTitle,
-  Footer,
   Header,
-  MouseScroll,
 } from './../components';
 import './../layouts/index.css';
 
-const NotFoundPage = ({ children }: {children: any}) => (
+const NotFoundPage = ({ children }: { children: any }) => (
   <ThemeProvider theme={theme}>
-        <div>
-          <Helmet
-            title="No se encontró la página | Gabriel García Seco"
-            meta={[
-              { name: 'description', content: 'Desarrollo Web | Music & More' },
-              {
-                name: 'keywords',
-                content: 'React, Javascript, Desarrollo Web, CSS',
-              },
-            ]}
-          />
-          <Cover>
-            <Header />
-            <CoverTitle title="Error 404" 
-                        description="La página que estás buscando puede que ya no exista, pulsa en el logo del header para volver al inicio"
-                        separator={false} />
-          </Cover>
-          {children}
-        </div>
-      </ThemeProvider>
+    <div>
+      <Helmet
+        title="No se encontró la página | Gabriel García Seco"
+        meta={[
+          { name: 'description', content: 'Desarrollo Web | Music & More' },
+          {
+            name: 'keywords',
+            content: 'React, Javascript, Desarrollo Web, CSS',
+          },
+        ]}
+      />
+      <Cover>
+        <Header />
+        <CoverTitle
+          title="Error 404"
+          description="La página que estás buscando puede que ya no exista"
+          separator={false}
+        />
+      </Cover>
+      {children}
+    </div>
+  </ThemeProvider>
 );
 
 export default NotFoundPage;
