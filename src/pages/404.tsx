@@ -2,11 +2,7 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import theme from './../theme';
-import {
-  Cover,
-  CoverTitle,
-  Header,
-} from './../components';
+import { Cover, CoverTitle, Header } from './../components';
 import './../layouts/index.css';
 
 const NotFoundPage = ({ children }: { children: any }) => (
