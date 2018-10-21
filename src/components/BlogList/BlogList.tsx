@@ -1,40 +1,36 @@
 import * as React from 'react';
 import { BlogListNode, BlogListFrontmatter } from '../../pages';
+import { Article, Wrapper, List, Tag, DateTime, Title, Excerpt } from "./BlogList.style";
 
-const BlogListItem = ({ item }: {item: BlogListFrontmatter}) => {
+const BlogListItem = ({ item }: { item: BlogListFrontmatter }) => {
   return (
-      <article>
-      <div className="wrapper">
-        <ul>
+    <Article>
+      <Wrapper>
+        <List>
           <li>
-            <span>{item.tags[0]}</span>
+            <Tag>{item.tags[0]}</Tag>
           </li>
           <li>
-            <a href="#">
-              <time>{item.date}</time>
-            </a>
+            <DateTime href="#">
+              <span>{item.date}</span>
+            </DateTime>
           </li>
-        </ul>
-  
-        <h2>
-          <a href="#">
-            {item.title}
-          </a>
-        </h2>
-  
-        <p>
-          {item.excerpt}
-        </p>
-      </div>
-  
-    </article>
-  )
-}
+        </List>
 
-const BlogList = ({ items } : {items: BlogListNode[]}): any => {
+        <Title>
+          <a href="#">{item.title}</a>
+        </Title>
+
+        <Excerpt>{item.excerpt} [...]</Excerpt>
+      </Wrapper>
+    </Article>
+  );
+};
+
+const BlogList = ({ items }: { items: BlogListNode[] }): any => {
   return items.map((item, key) => {
-    return <BlogListItem key={key} item={item.node.frontmatter} />
-  })
+    return <BlogListItem key={key} item={item.node.frontmatter} />;
+  });
 };
 
 export default BlogList;

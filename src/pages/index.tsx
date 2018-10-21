@@ -3,17 +3,17 @@ import DefaultLayout from './../layouts';
 import { BlogList } from './../components';
 
 export interface BlogListFrontmatter {
-  title: string,
-      path: string,
-      date: string,
-      tags: string[],
-      excerpt: string
+  title: string;
+  path: string;
+  date: string;
+  tags: string[];
+  excerpt: string;
 }
 
 export interface BlogListNode {
   node: {
-    frontmatter: BlogListFrontmatter
-  }
+    frontmatter: BlogListFrontmatter;
+  };
 }
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
@@ -21,7 +21,7 @@ export interface BlogListNode {
 interface IndexPageProps {
   data: {
     allMarkdownRemark: {
-      edges: BlogListNode[]
+      edges: BlogListNode[];
     };
   };
 }
@@ -42,9 +42,7 @@ export default class extends React.Component<IndexPageProps> {
 
 export const HomePageQuery = graphql`
   query HomepageQuery {
-    allMarkdownRemark(
-      sort: {order: DESC, fields: [frontmatter___date]}
-    ) {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           frontmatter {
@@ -56,6 +54,6 @@ export const HomePageQuery = graphql`
           }
         }
       }
-    } 
+    }
   }
 `;
