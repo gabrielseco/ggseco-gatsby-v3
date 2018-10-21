@@ -6,17 +6,19 @@ const CoverTitle = ({
   title,
   description,
   separator = true,
+  center = false
 }: {
   title: string;
-  description: string;
+  description: any;
   separator?: boolean;
+  center?: boolean;
 }) => (
-  <Container>
+  <Container center={center}>
     <Link to="/">
       <Title itemProp="headline">{title}</Title>
     </Link>
-    <Description itemProp="description">{description}</Description>
-    {separator && <Separator />}
+    <Description center={center} itemProp="description">{description}</Description>
+    {separator && <Separator center={center} />}
   </Container>
 );
 

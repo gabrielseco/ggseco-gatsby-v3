@@ -5,18 +5,13 @@ import theme from './../theme';
 import {
   Cover,
   CoverTitle,
-  Footer,
   Header,
-  MouseScroll,
 } from './../components';
-import image from './../assets/img/cover.jpg';
-import './index.css';
+import image from './../assets/img/contact.jpg';
+import './../layouts/index.css';
 
-interface DefaultLayoutProps {
-  children: any;
-}
 
-class DefaultLayout extends React.PureComponent<DefaultLayoutProps> {
+class Contacto extends React.PureComponent<any> {
   public render() {
     return (
       <ThemeProvider theme={theme}>
@@ -34,17 +29,15 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps> {
           <Cover image={image}>
             <Header />
             <CoverTitle
-              title="Gabriel García Seco"
-              description="Desarrollo Web | Music &amp; More"
+              title="Contacto"
+              description={["Puedes contactar conmigo en " ,<a href="mailto:ggarciaseco@gmail.com">ggarciaseco@gmail.com</a>]}
+              center
             />
-            <MouseScroll />
           </Cover>
-          {this.props.children}
-          <Footer />
         </div>
       </ThemeProvider>
     );
   }
 }
 
-export default DefaultLayout;
+export default Contacto;

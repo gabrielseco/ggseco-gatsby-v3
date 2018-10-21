@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { BackgroundImage, Container } from './Cover.style';
-import logo from './../../assets/img/cover.jpg';
 
-const Cover = ({ children }: { children: any }) => (
+const Cover = ({ children, image }: { children: any, image: string }) => (
   <Container>
-    <BackgroundImage url={logo} />
+    <BackgroundImage url={image} />
     {children}
   </Container>
 );
