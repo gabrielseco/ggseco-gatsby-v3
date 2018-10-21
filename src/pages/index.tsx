@@ -1,10 +1,19 @@
 import * as React from 'react';
 import DefaultLayout from './../layouts';
+import { BlogList } from './../components';
 
-const BlogList = ({ items }: { items: any}) => {
-  return (
-    <div>{JSON.stringify(items, null, 4)}</div>
-  )
+export interface BlogListFrontmatter {
+  title: string,
+      path: string,
+      date: string,
+      tags: string[],
+      excerpt: string
+}
+
+export interface BlogListNode {
+  node: {
+    frontmatter: BlogListFrontmatter
+  }
 }
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
@@ -12,7 +21,7 @@ const BlogList = ({ items }: { items: any}) => {
 interface IndexPageProps {
   data: {
     allMarkdownRemark: {
-      edges: any[]
+      edges: BlogListNode[]
     };
   };
 }
@@ -42,6 +51,8 @@ export const HomePageQuery = graphql`
             title
             path
             date
+            tags
+            excerpt
           }
         }
       }

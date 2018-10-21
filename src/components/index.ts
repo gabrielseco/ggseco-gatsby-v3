@@ -1,3 +1,4 @@
+export * from './BlogList';
 export * from './Cover';
 export * from './CoverTitle';
 export * from './Footer';
