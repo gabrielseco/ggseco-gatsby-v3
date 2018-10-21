@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const Article = styled.article`
-  padding: 5.625em 0;
+  padding: 5.625em 0 3.625em;
 
   &:nth-child(odd) {
     background: #f9f9f9;
   }
 `;
+
 export const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 56.25em;

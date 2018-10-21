@@ -1,6 +1,14 @@
 import * as React from 'react';
 import { BlogListNode, BlogListFrontmatter } from '../../pages';
-import { Article, Wrapper, List, Tag, DateTime, Title, Excerpt } from "./BlogList.style";
+import {
+  Article,
+  Wrapper,
+  List,
+  Tag,
+  DateTime,
+  Title,
+  Excerpt,
+} from './BlogList.style';
 
 const BlogListItem = ({ item }: { item: BlogListFrontmatter }) => {
   return (
