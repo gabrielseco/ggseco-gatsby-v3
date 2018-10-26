@@ -1,7 +1,7 @@
-import React from 'react'
+import * as React from 'react'
 import { graphql, Link } from 'gatsby'
 
-const Template = (props) => {
+const Template = (props: any) => {
   console.log(props)
   return (
     <div>
