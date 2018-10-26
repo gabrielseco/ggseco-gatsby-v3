@@ -7,7 +7,6 @@ import { Cover, Header } from './../components';
 import './../layouts/index.css';
 
 const Template = (props: any) => {
-  const image = props.data.markdownRemark.frontmatter.featured_image ? props.data.markdownRemark.frontmatter.featured_image.publicURL : '';
   return (
     <ThemeProvider theme={theme}>
     <div>
@@ -21,7 +20,7 @@ const Template = (props: any) => {
           },
         ]}
       />
-      <Cover image={image}>
+      <Cover image={props.data.markdownRemark.frontmatter.featured_image.publicURL}>
         <Header />
         <p>{props.data.markdownRemark.frontmatter.tags[0]}</p>
         <h2>{props.data.markdownRemark.frontmatter.title}</h2>
