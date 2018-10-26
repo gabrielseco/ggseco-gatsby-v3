@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 import { BlogListNode, BlogListFrontmatter } from '../../pages';
 import {
   Article,
@@ -24,11 +25,9 @@ const BlogListItem = ({ item }: { item: BlogListFrontmatter }) => {
             </DateTime>
           </li>
         </List>
-
         <Title>
-          <a href="#">{item.title}</a>
+          <Link to={`blog/${item.path}`}>{item.title}</Link>
         </Title>
-
         <Excerpt>{item.excerpt} [...]</Excerpt>
       </Wrapper>
     </Article>

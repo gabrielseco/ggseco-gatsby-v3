@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import theme from './../theme';
 import { Cover, CoverTitle, Header } from './../components';
+import image from './../assets/img/cover.jpg';
 import './../layouts/index.css';
 
 const NotFoundPage = ({ children }: { children: any }) => (
@@ -18,7 +19,7 @@ const NotFoundPage = ({ children }: { children: any }) => (
           },
         ]}
       />
-      <Cover>
+      <Cover image={image}>
         <Header />
         <CoverTitle
           title="Error 404"
