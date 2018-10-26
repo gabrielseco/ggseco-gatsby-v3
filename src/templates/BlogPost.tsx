@@ -7,6 +7,8 @@ import { Cover, Header } from './../components';
 import './../layouts/index.css';
 
 const Template = (props: any) => {
+  const image = process.env.NODE_ENV === 'production' ? 
+    `static/${props.data.markdownRemark.frontmatter.featured_image.publicURL}` : props.data.markdownRemark.frontmatter.featured_image.publicURL
   return (
     <ThemeProvider theme={theme}>
     <div>
@@ -20,7 +22,7 @@ const Template = (props: any) => {
           },
         ]}
       />
-      <Cover image={props.data.markdownRemark.frontmatter.featured_image.publicURL}>
+      <Cover image={image}>
         <Header />
         <p>{props.data.markdownRemark.frontmatter.tags[0]}</p>
         <h2>{props.data.markdownRemark.frontmatter.title}</h2>
