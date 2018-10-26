@@ -7,8 +7,8 @@ import { Cover, Header } from './../components';
 import './../layouts/index.css';
 
 const Template = (props: any) => {
-  const image = process.env.NODE_ENV === 'production' ? 
-    `ggseco-gatsby-v3/${props.data.markdownRemark.frontmatter.featured_image.publicURL}` : props.data.markdownRemark.frontmatter.featured_image.publicURL
+  const image = process.env.NODE_ENV === 'production' ? // TODO: Delete this with custom domain
+    `https://gabrielseco.github.io/ggseco-gatsby-v3${props.data.markdownRemark.frontmatter.featured_image.publicURL}` : props.data.markdownRemark.frontmatter.featured_image.publicURL
   return (
     <ThemeProvider theme={theme}>
     <div>
