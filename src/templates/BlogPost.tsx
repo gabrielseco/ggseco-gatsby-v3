@@ -8,7 +8,7 @@ import './../layouts/index.css';
 
 const Template = (props: any) => {
   const image = process.env.NODE_ENV === 'production' ? 
-    `static/${props.data.markdownRemark.frontmatter.featured_image.publicURL}` : props.data.markdownRemark.frontmatter.featured_image.publicURL
+    `ggseco-gatsby-v3/${props.data.markdownRemark.frontmatter.featured_image.publicURL}` : props.data.markdownRemark.frontmatter.featured_image.publicURL
   return (
     <ThemeProvider theme={theme}>
     <div>
