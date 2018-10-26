@@ -6,7 +6,7 @@ import theme from './../theme';
 import { Cover, Header } from './../components';
 
 const Template = (props: any) => {
-  const image = props.data.markdownRemark.frontmatter.featured_image ? 'props.data.markdownRemark.frontmatter.featured_image.publicURL' : '';
+  const image = props.data.markdownRemark.frontmatter.featured_image ? props.data.markdownRemark.frontmatter.featured_image.publicURL : '';
   return (
     <ThemeProvider theme={theme}>
     <div>
