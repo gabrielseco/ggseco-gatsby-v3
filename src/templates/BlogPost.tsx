@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { graphql } from 'gatsby'
 import theme from './../theme';
 import { Cover, Header } from './../components';
+import './../layouts/index.css';
 
 const Template = (props: any) => {
   const image = props.data.markdownRemark.frontmatter.featured_image ? props.data.markdownRemark.frontmatter.featured_image.publicURL : '';
