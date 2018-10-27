@@ -3,7 +3,8 @@ import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import { graphql } from 'gatsby';
 import theme from './../theme';
-import { Cover, Header, Footer, Tag } from './../components';
+import { Cover, CoverContainer, Header, Footer, Separator, Tag } from './../components';
+import { Title, Subtitle } from './BlogPost.style';
 import './../layouts/index.css';
 
 const getPathImagesBlog = (url: string) => {
@@ -31,9 +32,12 @@ const Template = (props: any) => {
         />
         <Cover image={image}>
           <Header />
-          <Tag>{props.data.markdownRemark.frontmatter.tags[0]}</Tag>
-          <h2>{props.data.markdownRemark.frontmatter.title}</h2>
-          <h3>{props.data.markdownRemark.frontmatter.subtitle}</h3>
+          <CoverContainer center>
+            <Tag>{props.data.markdownRemark.frontmatter.tags[0]}</Tag>
+            <Title>{props.data.markdownRemark.frontmatter.title}</Title>
+            <Subtitle>{props.data.markdownRemark.frontmatter.subtitle}</Subtitle>
+            <Separator/>
+          </CoverContainer>
         </Cover>
         <Footer />
       </div>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Link from 'gatsby-link';
-import { Container, Description, Separator, Title } from './CoverTitle.style';
+import { Description, Title } from './CoverTitle.style';
+import { CoverContainer, Separator } from './../../components';
 
 const CoverTitle = ({
   title,
@@ -13,15 +14,15 @@ const CoverTitle = ({
   separator?: boolean;
   center?: boolean;
 }) => (
-  <Container center={center}>
+  <CoverContainer center={center}>
     <Link to="/">
       <Title itemProp="headline">{title}</Title>
     </Link>
     <Description center={center} itemProp="description">
       {description}
     </Description>
-    {separator && <Separator center={center} />}
-  </Container>
+    {separator && <Separator />}
+  </CoverContainer>
 );
 
 export default CoverTitle;
