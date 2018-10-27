@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Link from 'gatsby-link';
 import { Description, Title } from './CoverTitle.style';
-import { CoverContainer, Separator } from './../../components';
+import { CoverContainer, Separator } from './../../components';
 
 const CoverTitle = ({
   title,

@@ -9,5 +9,4 @@ const Separator = styled.hr`
   width: 10%;
 `;
 
-
 export default Separator;

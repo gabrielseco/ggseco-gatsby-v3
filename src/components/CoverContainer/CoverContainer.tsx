@@ -5,8 +5,8 @@ const CoverContainer = styled.section<{ center: boolean }>`
   max-width: 56.25em;
   position: relative;
   vertical-align: middle;
-  text-align: ${props => props.center ? 'center' : 'inherit'};
-  width: ${props => props.center ? 'inherit' : '80%'};
+  text-align: ${props => (props.center ? 'center' : 'inherit')};
+  width: ${props => (props.center ? 'inherit' : '80%')};
 `;
 
 export default CoverContainer;
