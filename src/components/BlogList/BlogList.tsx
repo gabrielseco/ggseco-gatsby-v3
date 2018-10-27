@@ -1,15 +1,15 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+import { Link } from 'gatsby';
 import { BlogListNode, BlogListFrontmatter } from '../../pages';
 import {
   Article,
   Wrapper,
   List,
-  Tag,
   DateTime,
   Title,
   Excerpt,
 } from './BlogList.style';
+import { Tag } from './../../components';
 
 const BlogListItem = ({ item }: { item: BlogListFrontmatter }) => {
   return (

@@ -24,17 +24,6 @@ export const List = styled.ul`
   line-height: 1.75em;
 `;
 
-export const Tag = styled.span`
-  border-radius: 3px;
-  background: #0085c3;
-  color: ${props => props.theme.colors.white};
-  display: inline-block;
-  font-size: 0.75rem;
-  font-family: ${props => props.theme.fonts.montserrat};
-  padding: 0.1875rem 0.9375em;
-  text-transform: uppercase;
-`;
-
 export const DateTime = styled.a`
   color: #b5b5b5;
   font-size: 0.9375rem;
