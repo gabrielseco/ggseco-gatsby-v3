@@ -24,4 +24,4 @@ El ejemplo en **React** se puede ver en el siguiente [codepen](http://codepen.io
 
 Este trozo de código lo que hace el componente al inicializarse  es asignar la hora objetivo en el constructor, además de pasar las dos horas al estado del componente después de que se monta el componente, se lanza el evento **componentDidMount** el cual contiene un intervalo que se ejecuta cada segundo actualizando el estado de actualTime y por último en la función render hay un operador ternario que en base a la variable difference hace que se muestre un contenido u otro. 
 
-**Nota: **Este artículo será modificado si Angular 4.0 saque las mejoras respecto al **ngIf**
+**Nota:** Este artículo será modificado si Angular 4.0 saque las mejoras respecto al **ngIf**

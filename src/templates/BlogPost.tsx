@@ -11,7 +11,7 @@ import {
   Separator,
   Tag,
 } from './../components';
-import { Title, Subtitle } from './BlogPost.style';
+import { Title, Subtitle, Section } from './BlogPost.style';
 import './../layouts/index.css';
 
 const getPathImagesBlog = (url: string) => {
@@ -48,9 +48,7 @@ const Template = (props: any) => {
             <Separator />
           </CoverContainer>
         </Cover>
-        <section dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}>
-
-        </section>
+        <Section dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} />
         <Footer />
       </div>
     </ThemeProvider>
