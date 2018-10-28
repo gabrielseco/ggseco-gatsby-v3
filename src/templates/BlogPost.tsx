@@ -48,7 +48,9 @@ const Template = (props: any) => {
             <Separator />
           </CoverContainer>
         </Cover>
-        <Section dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} />
+        <Section
+          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
+        />
         <Footer />
       </div>
     </ThemeProvider>
