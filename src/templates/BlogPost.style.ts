@@ -46,4 +46,14 @@ export const Section = styled.section`
     margin: 0 0 1.25rem;
     padding: 0 2.5%;
   }
+
+  p {
+    color: rgba(35, 37, 40, 0.7);
+    font-family: ${props => props.theme.fonts.noto};
+    font-size: 1.1875rem;
+    font-weight: 400;
+    line-height: 2.1875rem;
+    margin: 2.8125rem 0;
+    padding: 0;
+  }
 `;

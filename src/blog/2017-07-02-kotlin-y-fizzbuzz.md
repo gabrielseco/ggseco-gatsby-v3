@@ -1,5 +1,5 @@
 ---
-path: "/kotlin-y-fizzbuzz"
+path: "/kotlin-y-fizzbuzz/"
 date: "2017-07-02"
 title: "Kotlin y FizzBuzz"
 tags: ['Kotlin']
