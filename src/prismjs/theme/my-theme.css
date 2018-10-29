@@ -1,0 +1,41 @@
+pre[class*=language-]{
+  background: #f8f8f8;
+  font-size: 1rem;
+}
+
+code[class*="language-"] {
+  line-height: 38px;
+}
+
+.token.atrule, 
+.token.attr-value, 
+.token.keyword {
+  color: #444;
+  font-weight: bold;
+}
+
+.token.property, 
+.token.tag, 
+.token.boolean, 
+.token.number, 
+.token.constant, 
+.token.symbol, 
+.token.deleted {
+  color: #099;
+}
+
+.token.function, 
+.token.class-name {
+  color: #444;
+  font-weight: bold;
+}
+
+.token.selector, 
+.token.attr-name, 
+.token.string, 
+.token.char, 
+.token.builtin, 
+.token.url, 
+.token.inserted {
+  color: #d14;
+}
