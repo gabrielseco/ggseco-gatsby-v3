@@ -26,13 +26,42 @@ La primera forma de hacerlo es la más imperativa de todos, tienes un for que em
 
 Luegas usas unos ifs que se cumplan las condiciones y las imprimes por pantalla.
 
+```kotlin
+  for (i in 1..100) {
+   if (i % 15 == 0) {
+     print("FizzBuzz \n")
+   } else if (i % 3 == 0) {
+     print("Fizz \n")
+   } else if (i % 5 == 0) {
+     print("Buzz\n")
+   } else {
+     print("$i \n")
+   }
+ }
+```
+
 La segunda manera de hacerlo puede ser la siguiente. 
 
 Seguimos usando un for el cual por cada iteración llamada una función. 
 
 Dentro de esa función llamamos a la estructura when que digamos para simplificar que funciona como un switch en cualquier otro lenguaje. 
 
-Hacemos que se evalué siempre para que entre en la estructura de control y si se dan las condiciones irá imprimiendo los datos por pantalla. 
+Hacemos que se evalué siempre para que entre en la estructura de control y si se dan las condiciones irá imprimiendo los datos por pantalla.
+
+```kotlin
+for (i in 1..100) {
+  printFizzBuzz(i)
+}
+
+fun printFizzBuzz(item: Int) {
+  when (true) {
+    item % 15 == 0 -> print("FizzBuzz \n")
+    item % 3 == 0 -> print("Fizz \n")
+    item % 5 == 0 -> print("Buzz \n")
+    else -> print("$item\n")
+  }
+}
+```
 
 La tercera y última manera por la cuál podemos mejorar nuestro código es la siguiente. 
 
@@ -41,6 +70,20 @@ Está la podría denominar la más próxima a la programación funcional.
 Utilizas un rango del 1 al 100 y utilizas un .map que va ir iterando el rango.
 
 La función .map usa una lambda y sin declarar variable se le puede pasar el número a la función que se usaba en el ejemplo 2. 
+
+```kotlin
+ val range = 1..100
+ range.map { printFizzBuzz(it) }
+
+ fun printFizzBuzz(item: Int) {
+  when (true) {
+    item % 15 == 0 -> print("FizzBuzz \n")
+    item % 3 == 0 -> print("Fizz \n")
+    item % 5 == 0 -> print("Buzz \n")
+    else -> print("$item\n")
+  }
+}
+```
 
 Si queréis probar el código, lo tienes muy fácil copias un trozo de código y lo pruebas en el siguiente enlace 
 
