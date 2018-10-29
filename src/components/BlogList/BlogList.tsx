@@ -11,6 +11,33 @@ import {
 } from './BlogList.style';
 import { Tag } from './../../components';
 
+const getMonth = (month: number) => {
+  const months = [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre"
+  ];
+
+  return months[month - 1];
+}
+
+const FormatDate = (date: string) => {
+  const [year, month, day] = date.split("-");
+  const dayAsHuman = parseInt(day, 10);
+  const monthAsHuman = getMonth(parseInt(month.slice(1), 10));
+  const formattedDate = dayAsHuman + " de " + monthAsHuman + " de " + year;
+  return formattedDate;
+}
+
 const BlogListItem = ({ item }: { item: BlogListFrontmatter }) => {
   return (
     <Article>
@@ -21,7 +48,7 @@ const BlogListItem = ({ item }: { item: BlogListFrontmatter }) => {
           </li>
           <li>
             <DateTime href="#">
-              <span>{item.date}</span>
+              <span>{FormatDate(item.date)}</span>
             </DateTime>
           </li>
         </List>
