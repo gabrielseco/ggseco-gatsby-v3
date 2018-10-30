@@ -1,15 +1,14 @@
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import { rem } from './../../utils/styled';
 
 export const Container = styled.header`
   background: transparent;
   border: 0;
   display: flex;
-  height: ${rem(4.6875)};
+  height: 7.5rem;
   justify-content: space-between;
   left: 0;
-  padding: ${rem(2.1875)};
+  padding: 3.5rem;
   position: absolute;
   top: 0;
   width: 100%;
@@ -19,7 +18,7 @@ export const Container = styled.header`
 export const SuperLink = styled(Link)`
   color: ${props => props.theme.colors.white};
   font-family: ${props => props.theme.fonts.varela};
-  font-size: ${rem(1.125)};
+  font-size: 1.8rem;
   font-weight: 600;
   text-decoration: none;
 `;
