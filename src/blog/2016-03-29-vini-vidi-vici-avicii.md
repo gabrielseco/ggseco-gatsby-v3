@@ -7,64 +7,99 @@ excerpt: "Repaso a las mejores canciones de AVICII, desde el año 2009 hasta el 
 subtitle: ""
 featured_image: "./images/avicii.jpg"
 ---
-Ya que <strong>AVICII</strong> ha decidido irse a <strong>Benidorm</strong> de vacaciones, le vamos a dar su tributo.
-<h3>AÑO 2009</h3>
-[ecko_youtube]GBGz-RkHtso[/ecko_youtube]
-<h3>AÑO 2010</h3>
-[ecko_youtube]Jrd25gjyDhE[/ecko_youtube]
-<h3>AÑO 2011</h3>
-[ecko_youtube]AbB3z2fZ7PM[/ecko_youtube]
+Ya que **AVICII** ha decidido irse a **Benidorm** de vacaciones, le vamos a dar su tributo.
 
-[ecko_youtube]DASUvhEc1LE[/ecko_youtube]
+### AÑO 2009
 
-[ecko_youtube]TlaE2x3vffw[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/GBGz-RkHtso" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]tuTUC63kjDY[/ecko_youtube]
+### AÑO 2010
+<div>
+  <iframe src="https://www.youtube.com/embed/Jrd25gjyDhE" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]fEqCGe5kdQs[/ecko_youtube]
+### AÑO 2011
+<div>
+  <iframe src="https://www.youtube.com/embed/AbB3z2fZ7PM" width="100%" height="500px" frameborder="0"></iframe>
+</div>
+<div>
+  <iframe src="https://www.youtube.com/embed/DASUvhEc1LE" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]qLtioL8dA2I[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/TlaE2x3vffw" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]KQYzF84xocw[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/tuTUC63kjDY" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]_ovdm2yX4MA[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/qLtioL8dA2I" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]kmXEiX_3p_Q[/ecko_youtube]
 
-&nbsp;
-<h3>AÑO 2012</h3>
-[ecko_youtube]ZMScU2bRORE[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/_ovdm2yX4MA" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]q2qKyya32lI[/ecko_youtube]
-<h3>AÑO 2013</h3>
-[ecko_youtube]6VJBBUqr1wM[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/kmXEiX_3p_Q" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]fyGh5hsrz0Q[/ecko_youtube]
+### AÑO 2012
 
-[ecko_youtube]Ge4G1gQv7JY[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/ZMScU2bRORE" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]IcrbM1l_BoI[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/q2qKyya32lI" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]6Cp6mKbRTQY[/ecko_youtube]
+### AÑO 2013
+<div>
+  <iframe src="https://www.youtube.com/embed/6VJBBUqr1wM" width="100%" height="500px" frameborder="0"></iframe>
+</div>
+<div>
+  <iframe src="https://www.youtube.com/embed/fyGh5hsrz0Q" width="100%" height="500px" frameborder="0"></iframe>
+</div>
+<div>
+  <iframe src="https://www.youtube.com/embed/IcrbM1l_BoI" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]seKrfTa-3yk[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/6Cp6mKbRTQY" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]k-3Lr2_lDMo[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/seKrfTa-3yk" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]xVs1fuEjneY[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/k-3Lr2_lDMo" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-&nbsp;
-<h3>AÑO 2014</h3>
-[ecko_youtube]auETcEY3b9Q[/ecko_youtube]
+<div>
+  <iframe src="https://www.youtube.com/embed/xVs1fuEjneY" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-[ecko_youtube]Qc0pIWMhEsk[/ecko_youtube]
 
-[ecko_youtube]UtF6Jej8yb4[/ecko_youtube]
+### AÑO 2014
+<div>
+  <iframe src="https://www.youtube.com/embed/auETcEY3b9Q" width="100%" height="500px" frameborder="0"></iframe>
+</div>
+<div>
+  <iframe src="https://www.youtube.com/embed/Qc0pIWMhEsk" width="100%" height="500px" frameborder="0"></iframe>
+</div>
+<div>
+  <iframe src="https://www.youtube.com/embed/UtF6Jej8yb4" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-&nbsp;
-<h3>AÑO 2015</h3>
-[ecko_youtube]9WZN3S_j9dQ[/ecko_youtube]
+### AÑO 2015
+<div>
+  <iframe src="https://www.youtube.com/embed/9WZN3S_j9dQ" width="100%" height="500px" frameborder="0"></iframe>
+</div>
 
-&nbsp;
-<h3>AÑO 2016</h3>
-[ecko_youtube]930ezwNrZ3w[/ecko_youtube]
