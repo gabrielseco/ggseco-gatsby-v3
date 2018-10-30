@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { rem } from './../../utils/styled';
 
 export const Container = styled.footer`
   background: #242526;
   display: flex;
-  height: ${rem(6.25)};
-  padding: ${rem(1.875)};
+  height: 10rem;
+  padding: 3rem;
 `;
 
 export const List = styled.ul`
@@ -28,8 +27,8 @@ export const List = styled.ul`
 
 export const IconLink = styled.a<{ hoverColor: string }>`
   color: ${props => props.theme.colors.white};
-  font-size: ${rem(0.875)};
-  padding: 0 ${rem(1.0625)};
+  font-size: 1.4rem;
+  padding: 0 1.7rem;
   text-decoration: none;
 
   &:hover {

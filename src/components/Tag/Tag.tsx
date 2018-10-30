@@ -1,14 +1,13 @@
 import styled from 'styled-components';
-import { rem } from './../../utils/styled'
 
 const Tag = styled.span`
-  border-radius: 3px;
+  border-radius: 0.3rem;
   background: #0085c3;
   color: ${props => props.theme.colors.white};
   display: inline-block;
-  font-size: ${rem(0.75)};
+  font-size: 1.2rem;
   font-family: ${props => props.theme.fonts.montserrat};
-  padding: ${rem(0.1875)} ${rem(0.9375)};
+  padding: 0.3rem 1.5rem;
   text-transform: uppercase;
 `;
 

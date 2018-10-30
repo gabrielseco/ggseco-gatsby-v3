@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { rem } from './../../utils/styled'
+import { rem } from './../../utils/styled';
 
 const CoverContainer = styled.section<{ center: boolean }>`
   display: table-cell;
