@@ -5,11 +5,14 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  font-size: 62.5%;
+}
+
 body {
-  line-height: 1.75em;
+  line-height: 2.8rem;
   font-family: Oxygen, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 300;
   margin: 0;
   padding: 0;

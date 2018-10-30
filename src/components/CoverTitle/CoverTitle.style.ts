@@ -1,12 +1,13 @@
 import styled from 'styled-components';
+import { rem } from './../../utils/styled';
 
 export const Title = styled.h1`
   color: ${props => props.theme.colors.white};
-  font-size: 2.75rem;
+  font-size: ${rem(2.75)};
   font-weight: 600;
   font-family: ${props => props.theme.fonts.varela};
-  line-height: 3.25rem;
-  margin: 10% 0 3.125rem;
+  line-height: ${rem(3.25)};
+  margin: 10% 0 ${rem(3.125)};
 `;
 
 const descriptionColors = {
@@ -15,12 +16,12 @@ const descriptionColors = {
 
 export const Description = styled.p<{ center: boolean }>`
   color: ${descriptionColors.text};
-  font-size: 1.4375rem;
+  font-size: ${rem(1.4375)};
   font-family: ${props => props.theme.fonts.varela};
-  letter-spacing: -0.0625rem;
-  line-height: 2.375rem;
-  margin: 2.5rem 0 2.1875rem;
-  max-width: ${props => (props.center ? '100%' : '30rem')};
+  letter-spacing: ${rem(-0.0625)};
+  line-height: ${rem(2.375)};
+  margin: ${rem(2.5)} 0 ${rem(2.1875)};
+  max-width: ${props => (props.center ? '100%' : rem(30))};
 
   a {
     border-bottom: 2px solid ${descriptionColors.text};

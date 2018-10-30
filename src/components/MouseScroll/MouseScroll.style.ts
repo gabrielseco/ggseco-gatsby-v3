@@ -1,17 +1,18 @@
 import styled from 'styled-components';
+import { rem } from './../../utils/styled';
 
 export const Mouse = styled.div`
   border: 2px solid #888;
   border: 2px solid rgba(255, 255, 255, 0.27);
-  border-radius: 0.9375em;
-  bottom: 2.5em;
+  border-radius: ${rem(0.9375)};
+  bottom: ${rem(2.5)};
   cursor: pointer;
   position: absolute;
-  right: 2.5em;
-  margin-left: -0.75em;
-  height: 2.25em;
+  right: ${rem(2.5)};
+  margin-left: ${rem(-0.75)};
+  height: ${rem(2.25)};
   transition: border-color 0.2s ease-in;
-  width: 1.5625em;
+  width: ${rem(1.5625)};
 `;
 
 export const Scroll = styled.div`
@@ -20,9 +21,9 @@ export const Scroll = styled.div`
   animation-iteration-count: infinite;
   border-radius: 0.25em;
   display: block;
-  margin: 0.375em auto;
-  width: 0.1875em;
-  height: 0.375em;
+  margin: ${rem(0.375)} auto;
+  width: ${rem(0.1875)};
+  height: ${rem(0.375)};
   background: #b0b1b1;
 
   @keyframes scroll {
