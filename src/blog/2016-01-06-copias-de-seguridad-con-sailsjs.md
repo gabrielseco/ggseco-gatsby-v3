@@ -22,7 +22,7 @@ El problema que tenía es que quería guardar mis datos, por si en el futuro hub
     var date = new Date();
     var fecha = date.getFullYear() + “-” + date.getMonth() + 1 + “-” + date.getDate();
     var file = “../sql-backup/learnseries”+ fecha + “.sql”;
-    child = exec(“mysqldump -u root -p learnseries > ” +file, function (error, stdout, stderr) {
+    child = exec(“mysqldump -u root -p learnseries > ” + file, function (error, stdout, stderr){
       if (error !== null) {
          console.log(‘exec error: ‘ + error);
       }
