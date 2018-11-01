@@ -8,15 +8,15 @@ subtitle: "Parte I. El listado"
 featured_image: "./images/code.jpg"
 ---
 
-Drifty co. ha sacado recientemente la versión beta de **[Ionic Framework v2](http://ionic.io/2)**, que viene con grandes cambios, con la actualización a **[Angular2](https://angular.io/)**, y una actualización de sus componentes, una nueva navegación.
+Drifty co. ha sacado recientemente la versión beta de **<a href="http://ionic.io/2" target="_blank">Ionic Framework v2</a>**, que viene con grandes cambios, con la actualización a **<a href="https://angular.io/" target="_blank">Angular</a>**, y una actualización de sus componentes, una nueva navegación.
 
-Además usan **[Webpack](https://webpack.github.io/)**, para compilar los archivos SCSS, JS y HTML en el que usan **[BabelJS](https://babeljs.io/)** para compilar ES6.
+Además usan **<a href="https://webpack.github.io/" target="_blank">Webpack</a>**, para compilar los archivos SCSS, JS y HTML en el que usan **<a href="https://babeljs.io/" target="_blank">BabelJS</a>** para compilar ES6.
 
-Vamos a realizar una aplicación sencilla, que pide las películas más populares de un servicio REST **[themoviedb](http://docs.themoviedb.apiary.io/)**, lo mostraremos en un listado, además tendrán un detalle.
+Vamos a realizar una aplicación sencilla, que pide las películas más populares de un servicio REST **<a href="http://docs.themoviedb.apiary.io/" target="_blank">themoviedb</a>**, lo mostraremos en un listado, además tendrán un detalle.
 
 A continuación podéis ver el resultado de la app, si queréis saltaros el tutorial, podéis visitar el siguiente enlace de github y descargaros el código fuente.
 
-**[Ver código fuente](https://github.com/gabrielseco/learnionic2)**
+**<a href="https://github.com/gabrielseco/learnionic2" target="_blank">Ver código fuente</a>**
 
 ![Listado](./images/2016-01-04/star-wars.png)
 
