@@ -16,7 +16,7 @@ import './../layouts/index.css';
 
 const getPathImagesBlog = (url: string) => {
   return process.env.NODE_ENV === 'production' // TODO: Delete this with custom domain
-    ? `https://gabrielseco.github.io/ggseco-gatsby-v3${url}`
+    ? `https://gabrielseco.github.io${url}`
     : url;
 };
 
