@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import Media from "react-media";
 import { BlogListNode, BlogListFrontmatter } from '../../pages';
 import {
   Article,
@@ -30,13 +31,24 @@ const getMonth = (month: number) => {
   return months[month - 1];
 };
 
-const FormatDate = (date: string) => {
+const FormatDate = (date: string, fn: Function) => {
   const [year, month, day] = date.split('-');
   const dayAsHuman = parseInt(day, 10);
   const monthAsHuman = getMonth(parseInt(month.slice(1), 10));
-  const formattedDate = dayAsHuman + ' de ' + monthAsHuman + ' de ' + year;
-  return formattedDate;
+  return fn({
+    day: dayAsHuman,
+    month: monthAsHuman,
+    year: parseInt(year, 10)
+  })
 };
+
+const FormatDesktop = ({ day, month, year}: { day: number, month: number, year: number}) => {
+  return day + ' de ' + month + ' de ' + year;
+}
+
+const FormatMobile = ({ day, month, year}: { day: number, month: number, year: number}) => {
+  return day + ' ' + month + ' ' + year;
+}
 
 const BlogListItem = ({ item }: { item: BlogListFrontmatter }) => {
   return (
@@ -48,7 +60,15 @@ const BlogListItem = ({ item }: { item: BlogListFrontmatter }) => {
           </li>
           <li>
             <DateTime href="#">
-              <span>{FormatDate(item.date)}</span>
+              <Media query="(max-width: 768px)">
+                {(matches: boolean) =>
+                  matches ? (
+                    <span>{FormatDate(item.date, FormatMobile)}</span>
+                  ) : (
+                    <span>{FormatDate(item.date, FormatDesktop)}</span>
+                  )
+                }
+              </Media>
             </DateTime>
           </li>
         </List>
