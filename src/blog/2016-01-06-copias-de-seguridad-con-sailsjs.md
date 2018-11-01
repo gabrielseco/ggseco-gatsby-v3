@@ -8,7 +8,7 @@ subtitle: ""
 featured_image: "./images/man-with-tablet.jpg"
 ---
 
-Últimamente estoy haciendo varias apps usando **[ReactJS](https://facebook.github.io/react/)** con el framework **[SailsJS](http://sailsjs.org/)**. **SailsJS** 
+Últimamente estoy haciendo varias apps usando **<a href="https://facebook.github.io/react/" target="_blank">ReactJS</a>** con el framework **<a href="http://sailsjs.org/" target="_blank">SailsJS</a>**.
 
 ofrece una api desde el minuto 1 donde se pueden hacer altas, bajas, modificaciones y búsquedas. Además tiene distintos adaptadores para conectar con distintas bases de datos. 
 
@@ -34,4 +34,4 @@ El problema que tenía es que quería guardar mis datos, por si en el futuro hub
 
 Se ejecuta el comando mysqldump con permisos de administrador y se guarda un fichero mysql con la fecha en la que se ejecuta. 
 
-Documentación: [SailsJS Bootstrap file](http://sailsjs.org/documentation/anatomy/my-app/config/bootstrap-js)
+Documentación: <a href="http://sailsjs.org/documentation/anatomy/my-app/config/bootstrap-js" target="_blank">SailsJS Bootstrap file</a>

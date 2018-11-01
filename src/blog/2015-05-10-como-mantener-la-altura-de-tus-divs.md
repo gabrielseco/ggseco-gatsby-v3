@@ -98,10 +98,14 @@ En el css usamos la propiedad display con valor  flex para decirle que queremos 
 
 Si quieres aprender flexbox puedes usar esta guía
 
-[Guía Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">
+  Guía Flexbox
+</a>
 
 He hecho una demo que se puede ver a continuación
 
-[Demo](http://codepen.io/GGarciaSeco/pen/MwaJmY/)
+<a href="http://codepen.io/GGarciaSeco/pen/MwaJmY/" target="_blank">
+  Demo
+</a>
 
 Saludos &amp; Happy Coding

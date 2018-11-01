@@ -14,7 +14,7 @@ El ejemplo que llevaremos a cabo contiene  un reloj el cuál cuando llegue a la
 
 **Angular 2.0** en su nueva versión, nos proporciona la directiva en **\*ngIf** la cual evalúa una expresión dada, si es la expresión dada es correcta nos renderizará nuestro elemento en el DOM y si no lo es lo descartará. 
 
-Se puede ver la demo en el siguiente [plunker](https://embed.plnkr.co/lCAFUIK84ttUkSqnrOvH/) 
+Se puede ver la demo en el siguiente <a href="https://embed.plnkr.co/lCAFUIK84ttUkSqnrOvH/" target="_blank">plunker</a>
 
 ```typescript
 import {Component, NgModule} from "@angular/core";
@@ -60,7 +60,7 @@ Este trozo de código lo que hace el componente al inicializarse  es asignar l
 
 Si tuviésemos que realizar el siguiente ejemplo en **React** nos tendríamos que olvidar de la estructura if, pero podemos usar el operador ternario, el cuál funciona perfectamente como if /else 
 
-El ejemplo en **React** se puede ver en el siguiente [codepen](http://codepen.io/GGarciaSeco/pen/ggwPpp)
+El ejemplo en **React** se puede ver en el siguiente <a href="http://codepen.io/GGarciaSeco/pen/ggwPpp" target="_blank">codepen</a>
 
 ```js
 class App extends React.Component {
