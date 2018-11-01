@@ -8,7 +8,7 @@ subtitle: "Un caso practico"
 featured_image: "./images/kotlin.jpg"
 ---
 
-**[Kotlin](https://kotlinlang.org/)**, es un lenguaje de programación creado por **JetBrains** que corre en la **JVM** (Java Virtual Machine) que se ha puesto de moda, **Google** le ha dado soporte oficial para Android y el framework web por excelencia de Java **Spring** también le da soporte. 
+**<a href="https://kotlinlang.org/" target="_blank">Kotlin</a>**, es un lenguaje de programación creado por **JetBrains** que corre en la **JVM** (Java Virtual Machine) que se ha puesto de moda, **Google** le ha dado soporte oficial para Android y el framework web por excelencia de Java **Spring** también le da soporte. 
 
 En esta entrada no me quiero meter en que se diferencia **Kotlin** de otros lenguajes sólo quiero plantear un caso práctico como es la kata de **FizzBuzz** y como lo he resuelto de 3 maneras diferentes. 
 
@@ -87,12 +87,12 @@ La función .map usa una lambda y sin declarar variable se le puede pasar el nú
 
 Si queréis probar el código, lo tienes muy fácil copias un trozo de código y lo pruebas en el siguiente enlace 
 
-[https://try.kotlinlang.org/](https://try.kotlinlang.org/) 
+<a href="https://try.kotlinlang.org/" target="_blank">https://try.kotlinlang.org/</a>
 
 Ahí encontrarás un playground con una función main que es la que ejecuta tu código.
 
 ### Fun Facts
 
 *   Las funciones en Kotlin empiezan por fun "Because functions are fun"
-*   [Link interesante sobre FizzBuzz y las entrevistas de programación](https://blog.codinghorror.com/why-cant-programmers-program/)
-*   [Y en el siguiente enlace puedes leer más acerca del lenguaje](https://www.genbetadev.com/desarrollo-aplicaciones-moviles/kotlin-la-maquina-virtual-de-java-tiene-un-nuevo-aliado)
+*   <a href="https://blog.codinghorror.com/why-cant-programmers-program/" target="_blank">Link interesante sobre FizzBuzz y las entrevistas de programación</a>
+*   <a href="https://www.genbetadev.com/desarrollo-aplicaciones-moviles/kotlin-la-maquina-virtual-de-java-tiene-un-nuevo-aliado" target="_blank">Y en el siguiente enlace puedes leer más acerca del lenguaje</a>
