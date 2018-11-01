@@ -47,6 +47,10 @@ export const Title = styled.h2`
     margin: 4.5rem 0;
   `} a {
     color: #373737;
+
+    &:hover {
+      color: #5e5e5e;
+    }
   }
 `;
 
