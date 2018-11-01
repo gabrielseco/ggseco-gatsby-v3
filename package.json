@@ -22,7 +22,9 @@
     "styled-components": "^4.0.2"
   },
   "keywords": [
-    "gatsby, typescript"
+    "gatsby",
+    "typescript",
+    "react"
   ],
   "license": "MIT",
   "main": "n/a",

@@ -1,13 +1,17 @@
-# gatsby-starter-typescript
-The [default Gatsby starter](https://github.com/gatsbyjs/gatsby-starter-default) converted to [TypeScript](https://www.typescriptlang.org/).
+# [Personal website](ggseco.com)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+## Motivation
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-starter-typescript https://github.com/haysclark/gatsby-starter-typescript
-```
+I have a wordpress site costing me a little bit each month in Digital Ocean.
 
-## Deploy
+Now I have a website which I can modify easily, faster and for free in netlify.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/haysclark/gatsby-starter-typescript)
+Plus it was the third time I tried to give wordpress for other technology GatsbyJS just works
+
+## Technologies
+
+* GatsbyJS
+* Netlify
+* Typescript
+* React
+* Styled Components
