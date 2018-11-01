@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from './../utils/styled';
 
 export const Title = styled.h1`
   color: ${props => props.theme.colors.white};
@@ -21,11 +22,19 @@ export const Subtitle = styled.p`
 export const Section = styled.section`
   color: rgba(35, 37, 40, 0.7);
   font-family: ${props => props.theme.fonts.noto};
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 3.5rem;
-  margin: 8rem auto;
+  margin: 10% auto;
   max-width: 90rem;
+  width: 90%;
+
+  ${media.medium`
+   font-size: 1.8rem;
+  `} ${media.large`
+    font-size: 1.9rem;
+    margin: 8rem auto;
+  `}
 
   a {
     border-bottom: 1px solid #d4d5de;
@@ -50,10 +59,13 @@ export const Section = styled.section`
   p {
     color: rgba(35, 37, 40, 0.7);
     font-family: ${props => props.theme.fonts.noto};
-    font-size: 1.9rem;
     font-weight: 400;
     line-height: 3.5rem;
-    margin: 4.5rem 0;
+    margin: 0 0 3.5rem;
     padding: 0;
+
+    ${media.medium`
+      margin: 4.5rem 0;
+    `};
   }
 `;
