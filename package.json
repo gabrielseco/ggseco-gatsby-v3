@@ -33,7 +33,7 @@
     "generate:stateless": "node ./scripts/stateless.js",
     "generate:stateful": "node ./scripts/stateful.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && cp ./config/CNAME public/ && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "@types/node": "^10.11.2",
