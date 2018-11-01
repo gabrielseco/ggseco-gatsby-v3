@@ -21,8 +21,8 @@ Para la interfaz he usado **ReactJS**, con react-router para que haga la funció
 
 Para subir el proyecto, he usado **Heroku** que me ofrece una base de datos **MySQL** gratuita. 
 
-El proyecto se puede ver en el siguiente enlace: [https://learnseries.herokuapp.com/](https://learnseries.herokuapp.com/) Además tanto el código de **SailsJS**, como de la interfaz se encuentran en los siguientes enlaces: 
+El proyecto se puede ver en el siguiente enlace: <a href="https://learnseries.herokuapp.com/" target="_blank">https://learnseries.herokuapp.com/</a> Además tanto el código de **SailsJS**, como de la interfaz se encuentran en los siguientes enlaces: 
 
-[https://github.com/gabrielseco/sailslearnseries](https://github.com/gabrielseco/sailslearnseries) 
+<a href="https://github.com/gabrielseco/sailslearnseries" target="_blank">https://github.com/gabrielseco/sailslearnseries</a>
 
-[https://github.com/gabrielseco/series](https://github.com/gabrielseco/series) 
+<a href="https://github.com/gabrielseco/series" target="_blank">https://github.com/gabrielseco/series</a>
