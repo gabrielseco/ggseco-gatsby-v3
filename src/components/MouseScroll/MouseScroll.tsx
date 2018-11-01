@@ -35,7 +35,7 @@ let easeInOutQuad = function(
 const MouseScroll = () => {
   const onClick = () => {
     const el = document.querySelector('#cover-container');
-    const body = document.scrollingElement || document.documentElement
+    const body = document.scrollingElement || document.documentElement;
     scrollTo(body, el.clientHeight, 2000);
   };
   return (
