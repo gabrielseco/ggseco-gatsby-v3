@@ -1,4 +1,4 @@
-# [Personal website](ggseco.com)
+# [Personal website](https://www.ggseco.com)
 
 ## Motivation
 
