@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import Media from "react-media";
+import Media from 'react-media';
 import { BlogListNode, BlogListFrontmatter } from '../../pages';
 import {
   Article,
@@ -38,17 +38,33 @@ const FormatDate = (date: string, fn: Function) => {
   return fn({
     day: dayAsHuman,
     month: monthAsHuman,
-    year: parseInt(year, 10)
-  })
+    year: parseInt(year, 10),
+  });
 };
 
-const FormatDesktop = ({ day, month, year}: { day: number, month: number, year: number}) => {
+const FormatDesktop = ({
+  day,
+  month,
+  year,
+}: {
+  day: number;
+  month: number;
+  year: number;
+}) => {
   return day + ' de ' + month + ' de ' + year;
-}
+};
 
-const FormatMobile = ({ day, month, year}: { day: number, month: number, year: number}) => {
+const FormatMobile = ({
+  day,
+  month,
+  year,
+}: {
+  day: number;
+  month: number;
+  year: number;
+}) => {
   return day + ' ' + month + ' ' + year;
-}
+};
 
 const BlogListItem = ({ item }: { item: BlogListFrontmatter }) => {
   return (
