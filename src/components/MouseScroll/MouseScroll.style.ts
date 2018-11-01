@@ -1,29 +1,28 @@
 import styled from 'styled-components';
-import { rem } from './../../utils/styled';
 
 export const Mouse = styled.div`
   border: 2px solid #888;
   border: 2px solid rgba(255, 255, 255, 0.27);
-  border-radius: ${rem(0.9375)};
-  bottom: ${rem(2.5)};
+  border-radius: 1.5rem;
+  bottom: 4rem;
   cursor: pointer;
   position: absolute;
-  right: ${rem(2.5)};
-  margin-left: ${rem(-0.75)};
-  height: ${rem(2.25)};
+  right: 4rem;
+  margin-left: -1.2rem;
+  height: 3.6rem;
   transition: border-color 0.2s ease-in;
-  width: ${rem(1.5625)};
+  width: 2.5rem;
 `;
 
 export const Scroll = styled.div`
   animation-duration: 2s;
   animation-name: scroll;
   animation-iteration-count: infinite;
-  border-radius: 0.25em;
+  border-radius: 0.4rem;
   display: block;
-  margin: ${rem(0.375)} auto;
-  width: ${rem(0.1875)};
-  height: ${rem(0.375)};
+  margin: 0.6rem auto;
+  width: 0.3rem;
+  height: 0.6rem;
   background: #b0b1b1;
 
   @keyframes scroll {

@@ -17,6 +17,10 @@ interface DefaultLayoutProps {
 }
 
 class DefaultLayout extends React.PureComponent<DefaultLayoutProps> {
+  constructor(props: DefaultLayoutProps) {
+    super(props);
+  }
+
   public render() {
     return (
       <ThemeProvider theme={theme}>
