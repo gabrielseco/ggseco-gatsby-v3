@@ -76,7 +76,7 @@ En el tenemos importado nuestras páginas y definimos el componente que vamos a 
 
 Nuestro archivo debería quedar de la siguiente forma.
 
-```ts
+```typescript
 import {App, Platform} from ‘ionic/ionic’;
 //importamos la página films que vamos a crear a continuación
 import {Films} from ‘./pages/films/films’;
@@ -104,7 +104,7 @@ En el fichero films.js importamos un provider que vamos a crear posteriormente p
 
 También importamos Page y NavController de Ionic.
 
-```ts
+```typescript
 import {Page, NavController} from ‘ionic/ionic’;
 import {FilmsData} from ‘../../providers/films-data’;
 //Le decimos a la página que provider tiene que usar y la template que actuará como vista
@@ -172,7 +172,7 @@ En el importo  el módulo Http y el módulo Injectable para poder usarlo en fil
 
 El módulo nos permite hacer las llamadas Ajax.
 
-```ts
+```typescript
 import {Injectable} from ‘angular2/core’;
 import {Http} from ‘angular2/http’;
 @Injectable()
