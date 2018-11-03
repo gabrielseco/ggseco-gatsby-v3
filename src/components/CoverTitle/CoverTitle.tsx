@@ -10,7 +10,7 @@ const CoverTitle = ({
   center = false,
 }: {
   title: string;
-  description: any;
+  description?: any;
   separator?: boolean;
   center?: boolean;
 }) => (
@@ -18,9 +18,9 @@ const CoverTitle = ({
     <Link to="/">
       <Title itemProp="headline">{title}</Title>
     </Link>
-    <Description center={center} itemProp="description">
+    {description &&<Description center={center} itemProp="description">
       {description}
-    </Description>
+    </Description> } 
     {separator && <Separator />}
   </CoverContainer>
 );
