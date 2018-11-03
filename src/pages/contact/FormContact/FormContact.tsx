@@ -1,10 +1,16 @@
 import * as React from 'react';
-import { Form, FormGroup, FormLabel, FormControl, Button } from './FormContact.style';
+import {
+  Form,
+  FormGroup,
+  FormLabel,
+  FormControl,
+  Button,
+} from './FormContact.style';
 
 export default class FormContact extends React.Component {
   render() {
     return (
-      <Form> 
+      <Form>
         <FormGroup>
           <FormLabel>Nombre</FormLabel>
           <FormControl />
@@ -19,12 +25,10 @@ export default class FormContact extends React.Component {
         </FormGroup>
         <FormGroup>
           <FormLabel>Descripción</FormLabel>
-          <FormControl cols="40" rows="10" as="textarea"/>
+          <FormControl cols="40" rows="10" as="textarea" />
         </FormGroup>
-        <Button>
-          Enviar
-        </Button>
+        <Button>Enviar</Button>
       </Form>
-    )
+    );
   }
 }
