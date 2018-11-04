@@ -66,11 +66,14 @@ export default class FormContact extends React.Component<any, IState> {
   };
 
   onChange = (evt: React.FormEvent<HTMLInputElement>) => {
+    const dynamicStateEvent = {
+      [evt.currentTarget.name]: evt.currentTarget.value
+    }
     this.setState(state => ({
       ...state,
       form: {
         ...state.form,
-        [evt.currentTarget.name]: evt.currentTarget.value,
+        ...dynamicStateEvent,
       },
     }));
   };
@@ -85,13 +88,12 @@ export default class FormContact extends React.Component<any, IState> {
         )}
         {this.state.success && (
           <Alert type={AlertEnum.SUCCESS}>
-            Se ha envíado correctamente el mensaje. Te contestaré en los
-            próximos días
+            Mensaje recibido
           </Alert>
         )}
         <FormGroup>
           <FormLabel>Nombre (Requerido)</FormLabel>
-          <FormControl name="name" onChange={this.onChange} />
+          <FormControl name="name"  onChange={this.onChange} />
         </FormGroup>
         <FormGroup>
           <FormLabel>Email (Requerido)</FormLabel>
