@@ -41,7 +41,7 @@ export default class FormContact extends React.Component<any, IState> {
         body: '',
       },
       error: false,
-      success: false
+      success: false,
     };
   }
   onSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
@@ -51,7 +51,7 @@ export default class FormContact extends React.Component<any, IState> {
       .post(getContactsPath(), this.state.form)
       .then(() => {
         this.setState({
-          success: true
+          success: true,
         });
         const el = document.querySelector('#form-contact');
         scrollTo(el.clientHeight - 75, 1000);
@@ -78,8 +78,17 @@ export default class FormContact extends React.Component<any, IState> {
   render() {
     return (
       <Form id="form-contact" onSubmit={this.onSubmit}>
-        {this.state.error && <Alert type={AlertEnum.ERROR}>Rellena todos los campos necesarios</Alert>}
-        {this.state.success && <Alert type={AlertEnum.SUCCESS}>Se ha envíado correctamente el mensaje. Te contestaré en los próximos días</Alert>}
+        {this.state.error && (
+          <Alert type={AlertEnum.ERROR}>
+            Rellena todos los campos necesarios
+          </Alert>
+        )}
+        {this.state.success && (
+          <Alert type={AlertEnum.SUCCESS}>
+            Se ha envíado correctamente el mensaje. Te contestaré en los
+            próximos días
+          </Alert>
+        )}
         <FormGroup>
           <FormLabel>Nombre (Requerido)</FormLabel>
           <FormControl name="name" onChange={this.onChange} />
