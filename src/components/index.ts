@@ -1,3 +1,4 @@
+export * from './Alert';
 export * from './BlogList';
 export * from './Cover';
 export * from './CoverContainer';

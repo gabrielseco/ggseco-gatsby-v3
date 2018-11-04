@@ -24,7 +24,11 @@ class Contacto extends React.PureComponent<any> {
           />
           <Cover image={image}>
             <Header />
-            <CoverTitle title="Contacto" description="En este formulario puedes contactar conmigo" center />
+            <CoverTitle
+              title="Contacto"
+              description="En este formulario puedes contactar conmigo"
+              center
+            />
             <MouseScroll />
           </Cover>
           <FormContact />

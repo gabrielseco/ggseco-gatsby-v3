@@ -66,11 +66,3 @@ export const Button = styled.button`
     outline: none;
   }
 `;
-
-export const Error = styled.p`
-  background: rgb(239, 87, 52);
-  color: ${props => props.theme.colors.white};
-  font-size: 1.8rem;
-  padding: 2rem;
-  text-align: center;
-`;
