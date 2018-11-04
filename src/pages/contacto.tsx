@@ -2,8 +2,13 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import theme from './../theme';
-import { Cover, CoverTitle, Header, MouseScroll } from './../components';
-import { FormContact } from './contact';
+import {
+  Cover,
+  CoverTitle,
+  Header,
+  FormContact,
+  MouseScroll,
+} from './../components';
 import image from './../assets/img/contact.jpg';
 import './../layouts/index.css';
 

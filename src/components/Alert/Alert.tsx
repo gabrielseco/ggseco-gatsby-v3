@@ -16,7 +16,6 @@ const colors = (props: any): any => ({
   },
 });
 
-
 const Alert = styled.p<{ type: number }>`
   background: ${props => colors(props)[props.type].background};
   color: ${props => colors(props)[props.type].color};

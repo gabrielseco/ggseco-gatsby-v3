@@ -1,6 +1,6 @@
 import * as React from 'react';
 import axios from 'axios';
-import { Alert, AlertEnum } from './../../../components';
+import { Alert, AlertEnum } from './../../components';
 import {
   Form,
   FormGroup,
@@ -9,7 +9,7 @@ import {
   Button,
   ButtonContainer,
 } from './FormContact.style';
-import { scrollTo } from './../../../utils/animations';
+import { scrollTo } from './../../utils/animations';
 
 const getContactsPath = () => {
   const URL = 'https://ggseco-backend.herokuapp.com/api';
@@ -67,8 +67,8 @@ export default class FormContact extends React.Component<any, IState> {
 
   onChange = (evt: React.FormEvent<HTMLInputElement>) => {
     const dynamicStateEvent = {
-      [evt.currentTarget.name]: evt.currentTarget.value
-    }
+      [evt.currentTarget.name]: evt.currentTarget.value,
+    };
     this.setState(state => ({
       ...state,
       form: {
@@ -87,13 +87,11 @@ export default class FormContact extends React.Component<any, IState> {
           </Alert>
         )}
         {this.state.success && (
-          <Alert type={AlertEnum.SUCCESS}>
-            Mensaje recibido
-          </Alert>
+          <Alert type={AlertEnum.SUCCESS}>Mensaje recibido</Alert>
         )}
         <FormGroup>
           <FormLabel>Nombre (Requerido)</FormLabel>
-          <FormControl name="name"  onChange={this.onChange} />
+          <FormControl name="name" onChange={this.onChange} />
         </FormGroup>
         <FormGroup>
           <FormLabel>Email (Requerido)</FormLabel>

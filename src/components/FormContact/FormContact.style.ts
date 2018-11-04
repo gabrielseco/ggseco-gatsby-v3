@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from './../../../utils/styled';
+import { media } from './../../utils/styled';
 
 export const Form = styled.form`
   margin: 8rem auto;

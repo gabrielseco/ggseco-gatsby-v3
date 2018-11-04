@@ -4,6 +4,7 @@ export * from './Cover';
 export * from './CoverContainer';
 export * from './CoverTitle';
 export * from './Footer';
+export * from './FormContact';
 export * from './Header';
 export * from './MouseScroll';
 export * from './Separator';
