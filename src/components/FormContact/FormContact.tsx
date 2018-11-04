@@ -18,6 +18,21 @@ const getContactsPath = () => {
   return URL + ENDPOINT;
 };
 
+const getMessage = (message: string): string => {
+  console.log('message', message)
+  const FIELDS_EMPTY = 'Some fields are empty';
+  const EMAIL_IS_INVALID = 'The email is invalid';
+  switch(message) {
+    case FIELDS_EMPTY:
+      return 'Rellena todos los campos necesarios'
+    case EMAIL_IS_INVALID:
+      return 'El email no es válido';
+
+    default: 
+      throw new Error('The error message is not implemented')
+  }
+}
+
 interface IState {
   form: {
     name: string;
@@ -27,6 +42,7 @@ interface IState {
   };
   error: boolean;
   success: boolean;
+  messageAlert: string;
 }
 
 export default class FormContact extends React.Component<any, IState> {
@@ -40,6 +56,7 @@ export default class FormContact extends React.Component<any, IState> {
         subject: '',
         body: '',
       },
+      messageAlert: '',
       error: false,
       success: false,
     };
@@ -56,9 +73,12 @@ export default class FormContact extends React.Component<any, IState> {
         const el = document.querySelector('#form-contact');
         scrollTo(el.clientHeight - 75, 1000);
       })
-      .catch(() => {
+      .catch((error) => {
+        const message = error.response.data.message;
+        const assignedMessage = getMessage(message);
         this.setState({
           error: true,
+          messageAlert: assignedMessage
         });
         const el = document.querySelector('#form-contact');
         scrollTo(el.clientHeight - 75, 1000);
@@ -83,7 +103,7 @@ export default class FormContact extends React.Component<any, IState> {
       <Form id="form-contact" onSubmit={this.onSubmit}>
         {this.state.error && (
           <Alert type={AlertEnum.ERROR}>
-            Rellena todos los campos necesarios
+            {this.state.messageAlert}
           </Alert>
         )}
         {this.state.success && (
