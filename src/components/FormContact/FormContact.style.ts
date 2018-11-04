@@ -28,7 +28,7 @@ export const FormControl = styled.input<{ cols?: string; rows?: string }>`
   border-radius: 0.3rem;
   background: #f5f5f5;
   font-family: ${props => props.theme.fonts.montserrat};
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 1.4rem 1.8rem;
   transition: border-color 0.2s ease-in;
   width: 100%;
