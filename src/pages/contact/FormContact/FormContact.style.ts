@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from './../../../utils/styled';
 
 export const Form = styled.form`
   margin: 8rem auto;
@@ -38,4 +39,38 @@ export const FormControl = styled.input<{ cols?: string; rows?: string }>`
   }
 `;
 
-export const Button = styled.button``;
+export const ButtonContainer = styled.div`
+  display: block;
+  text-align: center;
+
+  ${media.medium`
+    text-align: left;
+  `};
+`;
+
+export const Button = styled.button`
+  background: #b3b3b3;
+  border: 0.2rem solid #f5f5f5;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  transition: border-color 0.2s ease-in;
+  width: 100%;
+
+  ${media.medium`
+    width: 15rem;
+  `} &:focus {
+    border-color: #cdcdcd;
+    outline: none;
+  }
+`;
+
+export const Error = styled.p`
+  background: rgb(239, 87, 52);
+  color: ${props => props.theme.colors.white};
+  font-size: 1.8rem;
+  padding: 2rem;
+  text-align: center;
+`;
