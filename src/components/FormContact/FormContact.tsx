@@ -115,7 +115,7 @@ export default class FormContact extends React.Component<any, IState> {
         </FormGroup>
         <FormGroup>
           <FormLabel>Email (Requerido)</FormLabel>
-          <FormControl type="email" name="email" onChange={this.onChange} />
+          <FormControl name="email" onChange={this.onChange} />
         </FormGroup>
         <FormGroup>
           <FormLabel>Asunto (Requerido)</FormLabel>
