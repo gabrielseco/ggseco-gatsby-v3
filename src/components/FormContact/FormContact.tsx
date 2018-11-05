@@ -19,7 +19,6 @@ const getContactsPath = () => {
 };
 
 const getMessage = (message: string): string => {
-  console.log('message', message)
   const FIELDS_EMPTY = 'Some fields are empty';
   const EMAIL_IS_INVALID = 'The email is invalid';
   switch(message) {
