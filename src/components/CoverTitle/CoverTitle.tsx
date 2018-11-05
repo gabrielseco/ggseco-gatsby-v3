@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Link from 'gatsby-link';
 import { Description, Title } from './CoverTitle.style';
 import { CoverContainer, Separator } from './../../components';
 
@@ -15,9 +14,7 @@ const CoverTitle = ({
   center?: boolean;
 }) => (
   <CoverContainer center={center}>
-    <Link to="/">
-      <Title itemProp="headline">{title}</Title>
-    </Link>
+    <Title itemProp="headline">{title}</Title>
     <Description center={center} itemProp="description">
       {description}
     </Description>
