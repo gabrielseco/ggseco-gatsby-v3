@@ -13,7 +13,6 @@ import image from './../assets/img/contact.jpg';
 import './../layouts/index.css';
 
 class Contacto extends React.PureComponent<any> {
-
   public render() {
     return (
       <ThemeProvider theme={theme}>
