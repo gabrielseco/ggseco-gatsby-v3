@@ -1,5 +1,6 @@
 import * as React from 'react';
 import axios from 'axios';
+import { loadReCaptcha, ReCaptcha } from 'react-recaptcha-v3'
 import { Alert, AlertEnum } from './../../components';
 import {
   Form,
@@ -10,9 +11,12 @@ import {
   ButtonContainer,
 } from './FormContact.style';
 import { scrollTo } from './../../utils/animations';
+import { getBackendUrl } from './../../utils/rest';
+
+const siteKey = "6Ld0HHkUAAAAAFebn-wutXyBf31y_XUbEBE0MZvb";
 
 const getContactsPath = () => {
-  const URL = 'https://ggseco-backend.herokuapp.com/api';
+  const URL = getBackendUrl();
   const ENDPOINT = '/contacts';
 
   return URL + ENDPOINT;
@@ -38,6 +42,7 @@ interface IState {
     email: string;
     subject: string;
     body: string;
+    score: number;
   };
   error: boolean;
   success: boolean;
@@ -54,12 +59,34 @@ export default class FormContact extends React.Component<any, IState> {
         email: '',
         subject: '',
         body: '',
+        score: 0
       },
       messageAlert: '',
       error: false,
       success: false,
     };
   }
+
+  componentDidMount() {
+    loadReCaptcha(siteKey);
+  }
+
+  verifyCallback = (recaptchaToken: string) => {
+    const endpoint = getBackendUrl() + '/contacts/validateRecaptcha'
+    axios.post(endpoint, {token: recaptchaToken})
+        .then(response => {
+        this.setState(state => {
+          return {
+            ...state,
+            form: {
+              ...state.form,
+              score: response.data.score
+            }
+          };
+        })
+    }).catch(error => console.log('error', error))
+  }
+
   onSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
 
@@ -133,6 +160,11 @@ export default class FormContact extends React.Component<any, IState> {
         <ButtonContainer>
           <Button type="submit">Enviar</Button>
         </ButtonContainer>
+        <ReCaptcha
+            sitekey={siteKey}
+            action='contact'
+            verifyCallback={this.verifyCallback}
+        />
       </Form>
     );
   }
