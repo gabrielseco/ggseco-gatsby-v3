@@ -62,7 +62,7 @@ export default class FormContact extends React.Component<any, IState> {
   }
   onSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
-    console.log('submitting')
+    console.log('submitting form')
 
     axios
       .post(getContactsPath(), this.state.form)
