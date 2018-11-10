@@ -1,6 +1,6 @@
 import * as React from 'react';
 import axios from 'axios';
-import { loadReCaptcha, ReCaptcha } from 'react-recaptcha-v3';
+import { loadReCaptcha, /* ReCaptcha */ } from 'react-recaptcha-v3';
 import { Alert, AlertEnum } from './../../components';
 import {
   Form,
@@ -72,7 +72,7 @@ export default class FormContact extends React.Component<any, IState> {
   }
 
   componentDidMount() {
-    console.log('mounting');
+    console.log('without recaptcha component netlify works');
     loadReCaptcha(siteKey);
   }
 
@@ -151,11 +151,11 @@ export default class FormContact extends React.Component<any, IState> {
         <ButtonContainer>
           <Button type="submit">Enviar</Button>
         </ButtonContainer>
-        <ReCaptcha
+        {/* <ReCaptcha
           sitekey={siteKey}
           action="contact"
           verifyCallback={this.verifyCallback}
-        />
+        /> */}
       </Form>
     );
   }
