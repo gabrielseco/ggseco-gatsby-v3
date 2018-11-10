@@ -32,6 +32,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --parser typescript --trailing-comma all --single-quote --write \"src/**/*.ts*\"",
     "generate:stateless": "node ./scripts/stateless.js",
