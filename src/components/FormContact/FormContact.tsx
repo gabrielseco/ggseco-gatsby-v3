@@ -1,7 +1,6 @@
 import * as React from 'react';
 import axios from 'axios';
 import { Alert, AlertEnum } from './../../components';
-import { loadReCaptcha, ReCaptcha } from 'react-recaptcha-v3';
 import {
   Form,
   FormGroup,
@@ -72,25 +71,12 @@ export default class FormContact extends React.Component<any, IState> {
   }
 
   componentDidMount() {
-    loadReCaptcha(siteKey);
+    console.log('mounting');
+    // loadReCaptcha(siteKey);
   }
 
   verifyCallback = (recaptchaToken: string) => {
-    const endpoint = getBackendUrl() + '/contacts/validateRecaptcha';
-    axios
-      .post(endpoint, { token: recaptchaToken })
-      .then(response => {
-        this.setState(state => {
-          return {
-            ...state,
-            form: {
-              ...state.form,
-              score: response.data.score,
-            },
-          };
-        });
-      })
-      .catch(error => console.log('error', error));
+    console.log('token', recaptchaToken)
   };
 
   onSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
@@ -164,11 +150,6 @@ export default class FormContact extends React.Component<any, IState> {
         <ButtonContainer>
           <Button type="submit">Enviar</Button>
         </ButtonContainer>
-        <ReCaptcha
-          sitekey={siteKey}
-          action="contact"
-          verifyCallback={this.verifyCallback}
-        />
       </Form>
     );
   }
