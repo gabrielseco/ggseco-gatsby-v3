@@ -74,8 +74,6 @@ export default class FormContact extends React.Component<any, IState> {
   }
 
   verifyCallback = (recaptchaToken: string) => {
-    console.log('message', recaptchaToken);
-    return;
     const endpoint = getBackendUrl() + '/contacts/validateRecaptcha';
     axios
       .post(endpoint, { token: recaptchaToken })

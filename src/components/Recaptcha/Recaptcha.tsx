@@ -27,7 +27,7 @@ class ReCaptcha extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
     this.state = {
-      ready: isReady(),
+      ready: false,
     };
   
     if (!this.state.ready) {
@@ -41,7 +41,7 @@ class ReCaptcha extends React.Component<IProps, IState> {
     }
   }
 
-  componentDidUpdate(_: any, prevState: any) {
+  componentDidUpdate(_: any, prevState: IState) {
     if (this.state.ready && !prevState.ready) {
       this.execute();
     }
@@ -56,12 +56,11 @@ class ReCaptcha extends React.Component<IProps, IState> {
     const { sitekey, verifyCallback, action } = this.props;
 
     if (ready) {
-      verifyCallback('window recaptcha breaks here or not');
-      /* (window as any).grecaptcha
+      (window as any).grecaptcha
         .execute(sitekey, { action })
         .then((token: string) => {
           verifyCallback(token);
-        }); */
+        });
     }
   }
 
