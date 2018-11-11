@@ -1,6 +1,6 @@
 import * as React from 'react';
 import axios from 'axios';
-import { Alert, AlertEnum, loadReCaptcha } from './../../components';
+import { Alert, AlertEnum, loadReCaptcha, ReCaptcha } from './../../components';
 import {
   Form,
   FormGroup,
@@ -162,6 +162,11 @@ export default class FormContact extends React.Component<any, IState> {
         <ButtonContainer>
           <Button type="submit">Enviar</Button>
         </ButtonContainer>
+        <ReCaptcha
+          sitekey={siteKey}
+          action="contact"
+          verifyCallback={this.verifyCallback}
+        />
       </Form>
     );
   }
