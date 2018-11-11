@@ -29,13 +29,13 @@ class ReCaptcha extends React.Component<IProps, IState> {
     this.state = {
       ready: false,
     };
-  
-    if (!this.state.ready) {
-      (this as any).readyCheck = setInterval(this._updateReadyState, 1000);
-    }
   }
 
   componentDidMount() {
+    if (!this.state.ready) {
+      (this as any).readyCheck = setInterval(this._updateReadyState, 1000);
+    }
+
     if (!!this.state.ready) {
       this.execute();
     }
