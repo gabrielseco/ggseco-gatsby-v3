@@ -7,5 +7,6 @@ export * from './Footer';
 export * from './FormContact';
 export * from './Header';
 export * from './MouseScroll';
+export * from './Recaptcha';
 export * from './Separator';
 export * from './Tag';
