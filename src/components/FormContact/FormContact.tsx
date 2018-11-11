@@ -10,7 +10,7 @@ import {
   ButtonContainer,
 } from './FormContact.style';
 import { scrollTo } from './../../utils/animations';
-import { getBackendUrl } from './../../utils/rest';
+import { getBackendUrl } from './../../utils/rest';
 
 const siteKey = '6Ld0HHkUAAAAAFebn-wutXyBf31y_XUbEBE0MZvb';
 
@@ -26,17 +26,17 @@ const getMessage = (message: string): string => {
   const EMAIL_IS_INVALID = 'The email is invalid';
   const RECAPTCHA_INVALID = 'The score is not enough';
 
-  switch(message) {
+  switch (message) {
     case FIELDS_EMPTY:
-      return 'Rellena todos los campos necesarios'
+      return 'Rellena todos los campos necesarios';
     case EMAIL_IS_INVALID:
       return 'El email no es válido';
     case RECAPTCHA_INVALID:
       return 'Según el recaptcha eres un bot. Si quieres puedes contactar en ggarciaseco@gmail.com';
-    default: 
-      throw new Error('The error message is not implemented')
+    default:
+      throw new Error('The error message is not implemented');
   }
-}
+};
 
 interface IState {
   form: {
@@ -61,7 +61,7 @@ export default class FormContact extends React.Component<any, IState> {
         email: '',
         subject: '',
         body: '',
-        score: 0
+        score: 0,
       },
       messageAlert: '',
       error: false,
@@ -91,7 +91,6 @@ export default class FormContact extends React.Component<any, IState> {
       .catch(error => console.log('error', error));
   };
 
-
   onSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
 
@@ -104,12 +103,12 @@ export default class FormContact extends React.Component<any, IState> {
         const el = document.querySelector('#form-contact');
         scrollTo(el.clientHeight - 75, 1000);
       })
-      .catch((error) => {
+      .catch(error => {
         const message = error.response.data.message;
         const assignedMessage = getMessage(message);
         this.setState({
           error: true,
-          messageAlert: assignedMessage
+          messageAlert: assignedMessage,
         });
         const el = document.querySelector('#form-contact');
         scrollTo(el.clientHeight - 75, 1000);
@@ -133,9 +132,7 @@ export default class FormContact extends React.Component<any, IState> {
     return (
       <Form id="form-contact" onSubmit={this.onSubmit}>
         {this.state.error && (
-          <Alert type={AlertEnum.ERROR}>
-            {this.state.messageAlert}
-          </Alert>
+          <Alert type={AlertEnum.ERROR}>{this.state.messageAlert}</Alert>
         )}
         {this.state.success && (
           <Alert type={AlertEnum.SUCCESS}>Mensaje recibido</Alert>
