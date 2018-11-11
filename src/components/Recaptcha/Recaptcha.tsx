@@ -4,7 +4,6 @@ const isReady = () =>
   typeof window !== 'undefined' &&
   typeof (window as any).grecaptcha !== 'undefined';
 
-let readyCheck: any;
 
 interface IProps {
     action: string;
@@ -19,19 +18,20 @@ interface IState {
 }
 
 class ReCaptcha extends React.Component<IProps, IState> {
+  
   static defaultProps = {
     elementID: 'g-recaptcha',
     verifyCallbackName: 'verifyCallback',
   };
-  constructor(props: any) {
+
+  constructor(props: IProps) {
     super(props);
-    this.execute = this.execute.bind(this);
     this.state = {
       ready: isReady(),
     };
-
+  
     if (!this.state.ready) {
-      readyCheck = setInterval(this._updateReadyState.bind(this), 1000);
+      (this as any).readyCheck = setInterval(this._updateReadyState, 1000);
     }
   }
 
@@ -48,10 +48,10 @@ class ReCaptcha extends React.Component<IProps, IState> {
   }
 
   componentWillUnmount() {
-    clearInterval(readyCheck);
+    clearInterval((this as any).readyCheck);
   }
 
-  execute() {
+  execute = () => {
     const { ready } = this.state;
     const { sitekey, verifyCallback, action } = this.props;
 
@@ -64,10 +64,10 @@ class ReCaptcha extends React.Component<IProps, IState> {
     }
   }
 
-  _updateReadyState() {
+  _updateReadyState = () => {
     if (isReady()) {
       this.setState({ ready: true });
-      clearInterval(readyCheck);
+      clearInterval((this as any).readyCheck);
     }
   }
 
