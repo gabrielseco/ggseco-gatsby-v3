@@ -162,11 +162,11 @@ export default class FormContact extends React.Component<any, IState> {
         <ButtonContainer>
           <Button type="submit">Enviar</Button>
         </ButtonContainer>
-        <ReCaptcha
+        {/* <ReCaptcha
           sitekey={siteKey}
           action="contact"
           verifyCallback={this.verifyCallback}
-        />
+        /> */}
       </Form>
     );
   }
