@@ -130,7 +130,8 @@ export default class FormContact extends React.Component<any, IState> {
 
   render() {
     return (
-      <Form id="form-contact" onSubmit={this.onSubmit}>
+      <React.Fragment>
+        <Form id="form-contact" onSubmit={this.onSubmit}>
         {this.state.error && (
           <Alert type={AlertEnum.ERROR}>{this.state.messageAlert}</Alert>
         )}
@@ -162,12 +163,15 @@ export default class FormContact extends React.Component<any, IState> {
         <ButtonContainer>
           <Button type="submit">Enviar</Button>
         </ButtonContainer>
-        {/* <ReCaptcha
+      </Form>
+      <ReCaptcha
           sitekey={siteKey}
           action="contact"
           verifyCallback={this.verifyCallback}
-        /> */}
-      </Form>
+        />
+
+      </React.Fragment>
+      
     );
   }
 }
