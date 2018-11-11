@@ -56,11 +56,12 @@ class ReCaptcha extends React.Component<IProps, IState> {
     const { sitekey, verifyCallback, action } = this.props;
 
     if (ready) {
-      (window as any).grecaptcha
+      verifyCallback('window recaptcha breaks here or not');
+      /* (window as any).grecaptcha
         .execute(sitekey, { action })
         .then((token: string) => {
           verifyCallback(token);
-        });
+        }); */
     }
   }
 
