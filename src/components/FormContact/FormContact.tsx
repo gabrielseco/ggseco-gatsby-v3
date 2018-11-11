@@ -163,13 +163,12 @@ export default class FormContact extends React.Component<any, IState> {
         <ButtonContainer>
           <Button type="submit">Enviar</Button>
         </ButtonContainer>
-      </Form>
-      <ReCaptcha
+        <ReCaptcha
           sitekey={siteKey}
           action="contact"
           verifyCallback={this.verifyCallback}
         />
-
+      </Form>
       </React.Fragment>
       
     );
