@@ -1,6 +1,6 @@
 import * as React from 'react';
 import axios from 'axios';
-import { Alert, AlertEnum } from './../../components';
+import { Alert, AlertEnum, loadReCaptcha } from './../../components';
 import {
   Form,
   FormGroup,
@@ -10,9 +10,12 @@ import {
   ButtonContainer,
 } from './FormContact.style';
 import { scrollTo } from './../../utils/animations';
+import { getBackendUrl } from './../../utils/rest';
+
+const siteKey = '6Ld0HHkUAAAAAFebn-wutXyBf31y_XUbEBE0MZvb';
 
 const getContactsPath = () => {
-  const URL = 'https://ggseco-backend.herokuapp.com/api';
+  const URL = getBackendUrl();
   const ENDPOINT = '/contacts';
 
   return URL + ENDPOINT;
@@ -21,12 +24,15 @@ const getContactsPath = () => {
 const getMessage = (message: string): string => {
   const FIELDS_EMPTY = 'Some fields are empty';
   const EMAIL_IS_INVALID = 'The email is invalid';
+  const RECAPTCHA_INVALID = 'The score is not enough';
+
   switch(message) {
     case FIELDS_EMPTY:
       return 'Rellena todos los campos necesarios'
     case EMAIL_IS_INVALID:
       return 'El email no es válido';
-
+    case RECAPTCHA_INVALID:
+      return 'Según el recaptcha eres un bot. Si quieres puedes contactar en ggarciaseco@gmail.com';
     default: 
       throw new Error('The error message is not implemented')
   }
@@ -38,6 +44,7 @@ interface IState {
     email: string;
     subject: string;
     body: string;
+    score: number;
   };
   error: boolean;
   success: boolean;
@@ -54,12 +61,37 @@ export default class FormContact extends React.Component<any, IState> {
         email: '',
         subject: '',
         body: '',
+        score: 0
       },
       messageAlert: '',
       error: false,
       success: false,
     };
   }
+
+  componentDidMount() {
+    loadReCaptcha(siteKey);
+  }
+
+  verifyCallback = (recaptchaToken: string) => {
+    const endpoint = getBackendUrl() + '/contacts/validateRecaptcha';
+    axios
+      .post(endpoint, { token: recaptchaToken })
+      .then(response => {
+        this.setState(state => {
+          return {
+            ...state,
+            form: {
+              ...state.form,
+              score: response.data.score,
+            },
+          };
+        });
+      })
+      .catch(error => console.log('error', error));
+  };
+
+
   onSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
 
