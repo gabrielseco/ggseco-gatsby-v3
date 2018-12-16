@@ -18,7 +18,9 @@ const NotFoundPage = ({ children }: { children: any }) => (
             content: 'React, Javascript, Desarrollo Web, CSS',
           },
         ]}
-      />
+      >
+        <html lang="es" />
+      </Helmet>
       <Cover image={image}>
         <Header />
         <CoverTitle

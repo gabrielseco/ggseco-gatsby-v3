@@ -11,6 +11,7 @@ const Footer = () => (
           href="https://twitter.com/GGarciaSeco10/"
           target="_blank"
           title="twitter"
+          rel="noopener noreferrer"
         >
           <FontAwesome name="Twitter" />
         </IconLink>
@@ -21,6 +22,7 @@ const Footer = () => (
           href="http://es.linkedin.com/in/gabrielgarciaseco"
           target="_blank"
           title="Linkedin"
+          rel="noopener noreferrer"
         >
           <FontAwesome name="linkedin" />
         </IconLink>
@@ -31,6 +33,7 @@ const Footer = () => (
           href="https://github.com/gabrielseco"
           target="_blank"
           title="Github"
+          rel="noopener noreferrer"
         >
           <FontAwesome name="github" />
         </IconLink>
