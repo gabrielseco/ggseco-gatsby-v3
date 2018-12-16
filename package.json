@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-typescript",
-  "description": "Gatsby TypeScript starter",
+  "name": "ggseco-gatsby-v3",
+  "description": "My personal blog in gatsby",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Gabriel García Seco <ggarciaseco@gmail.com>",
   "dependencies": {
     "axios": "^0.18.0",
     "babel-plugin-styled-components": "^1.8.0",

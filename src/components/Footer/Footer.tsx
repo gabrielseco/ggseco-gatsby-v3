@@ -10,8 +10,10 @@ const Footer = () => (
           hoverColor="#55acee"
           href="https://twitter.com/GGarciaSeco10/"
           target="_blank"
+          title="twitter"
+          rel="noopener noreferrer"
         >
-          <FontAwesome name="twitter" />
+          <FontAwesome name="Twitter" />
         </IconLink>
       </li>
       <li>
@@ -19,6 +21,8 @@ const Footer = () => (
           hoverColor="#0e76a8"
           href="http://es.linkedin.com/in/gabrielgarciaseco"
           target="_blank"
+          title="Linkedin"
+          rel="noopener noreferrer"
         >
           <FontAwesome name="linkedin" />
         </IconLink>
@@ -28,6 +32,8 @@ const Footer = () => (
           hoverColor="#999"
           href="https://github.com/gabrielseco"
           target="_blank"
+          title="Github"
+          rel="noopener noreferrer"
         >
           <FontAwesome name="github" />
         </IconLink>
