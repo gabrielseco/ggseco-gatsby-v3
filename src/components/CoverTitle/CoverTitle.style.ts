@@ -25,7 +25,7 @@ export const Description = styled.p<{ center: boolean }>`
   letter-spacing: -0.1rem;
   line-height: 3.8rem;
   margin: 4rem 0 3.5rem;
-  max-width: ${props => (props.center ? '100%' : '48rem')};
+  max-width: ${props => (props.center ? '100%' : '56rem')};
 
   a {
     border-bottom: 2px solid ${descriptionColors.text};
