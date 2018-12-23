@@ -130,7 +130,7 @@ export default class FormContact extends React.Component<any, IState> {
 
   render() {
     return (
-        <Form id="form-contact" onSubmit={this.onSubmit}>
+      <Form id="form-contact" onSubmit={this.onSubmit}>
         {this.state.error && (
           <Alert type={AlertEnum.ERROR}>{this.state.messageAlert}</Alert>
         )}
@@ -167,7 +167,7 @@ export default class FormContact extends React.Component<any, IState> {
           action="contact"
           verifyCallback={this.verifyCallback}
         />
-      </Form>      
+      </Form>
     );
   }
 }
