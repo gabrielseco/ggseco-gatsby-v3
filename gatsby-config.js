@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gabriel García Seco - Desarrollo Web | Music &amp; More`,
+    title: `Gabriel García Seco - Desarrollo Web | Music &amp; More`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,8 +13,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
-            },
+              maxWidth: 590
+            }
           },
           {
             resolve: `gatsby-remark-prismjs`,
@@ -23,19 +23,19 @@ module.exports = {
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
-              noInlineHighlight: false,
-            },
-          },
-        ],
-      },
+              noInlineHighlight: false
+            }
+          }
+        ]
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
-        path: `${__dirname}/src/blog`
+        path: `${__dirname}/blog`
       }
     }
   ],
-  pathPrefix: `/ggseco-gatsby-v3`,
-}
+  pathPrefix: `/ggseco-gatsby-v3`
+};
