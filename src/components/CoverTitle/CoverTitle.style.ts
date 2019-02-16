@@ -18,10 +18,7 @@ const descriptionColors = {
   text: '#b3b3b3'
 };
 
-export const Description =
-  styled.p <
-  { center: boolean } >
-  `
+export const Description = styled.p<{ center: boolean }>`
   color: ${descriptionColors.text};
   font-size: 2.3rem;
   font-family: ${props => props.theme.fonts.varela};

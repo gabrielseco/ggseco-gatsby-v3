@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import Media from 'react-media';
-import { BlogListNode, BlogListFrontmatter } from '../../pages';
+import { BlogListNode, BlogListFrontmatter } from '../../pages'; // eslint-disable-line
 import {
   Article,
   Wrapper,
@@ -47,9 +47,9 @@ const FormatDesktop = ({
   month,
   year
 }: {
-  day: number,
-  month: number,
-  year: number
+  day: number;
+  month: number;
+  year: number;
 }) => {
   return day + ' de ' + month + ' de ' + year;
 };
@@ -59,9 +59,9 @@ const FormatMobile = ({
   month,
   year
 }: {
-  day: number,
-  month: number,
-  year: number
+  day: number;
+  month: number;
+  year: number;
 }) => {
   return day + ' ' + month + ' ' + year;
 };

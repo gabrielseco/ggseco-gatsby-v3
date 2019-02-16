@@ -19,13 +19,13 @@ interface IState {
 class ReCaptcha extends React.Component<IProps, IState> {
   static defaultProps = {
     elementID: 'g-recaptcha',
-    verifyCallbackName: 'verifyCallback',
+    verifyCallbackName: 'verifyCallback'
   };
 
   constructor(props: IProps) {
     super(props);
     this.state = {
-      ready: false,
+      ready: false
     };
   }
 

@@ -25,10 +25,7 @@ export const List = styled.ul`
   }
 `;
 
-export const IconLink =
-  styled.a <
-  { hoverColor: string } >
-  `
+export const IconLink = styled.a<{ hoverColor: string }>`
   color: ${props => props.theme.colors.white};
   font-size: 1.4rem;
   padding: 0 1.7rem;

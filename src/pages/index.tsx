@@ -13,7 +13,7 @@ export interface BlogListFrontmatter {
 
 export interface BlogListNode {
   node: {
-    frontmatter: BlogListFrontmatter
+    frontmatter: BlogListFrontmatter;
   };
 }
 
@@ -22,8 +22,8 @@ export interface BlogListNode {
 interface IndexPageProps {
   data: {
     allMarkdownRemark: {
-      edges: BlogListNode[]
-    }
+      edges: BlogListNode[];
+    };
   };
 }
 

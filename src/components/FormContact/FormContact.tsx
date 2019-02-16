@@ -40,11 +40,11 @@ const getMessage = (message: string): string => {
 
 interface IState {
   form: {
-    name: string,
-    email: string,
-    subject: string,
-    body: string,
-    score: number
+    name: string;
+    email: string;
+    subject: string;
+    body: string;
+    score: number;
   };
   error: boolean;
   success: boolean;

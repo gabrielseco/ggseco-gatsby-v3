@@ -8,10 +8,10 @@ const CoverTitle = ({
   separator = true,
   center = false
 }: {
-  title: string,
-  description: any,
-  separator?: boolean,
-  center?: boolean
+  title: string;
+  description: any;
+  separator?: boolean;
+  center?: boolean;
 }) => (
   <CoverContainer center={center}>
     <Title itemProp="headline">{title}</Title>
