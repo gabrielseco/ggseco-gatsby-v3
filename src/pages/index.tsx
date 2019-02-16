@@ -13,7 +13,7 @@ export interface BlogListFrontmatter {
 
 export interface BlogListNode {
   node: {
-    frontmatter: BlogListFrontmatter;
+    frontmatter: BlogListFrontmatter
   };
 }
 
@@ -22,12 +22,12 @@ export interface BlogListNode {
 interface IndexPageProps {
   data: {
     allMarkdownRemark: {
-      edges: BlogListNode[];
-    };
+      edges: BlogListNode[]
+    }
   };
 }
 
-export default class extends React.Component<IndexPageProps> {
+export default class Index extends React.Component<IndexPageProps> {
   constructor(props: IndexPageProps, context: any) {
     super(props, context);
   }

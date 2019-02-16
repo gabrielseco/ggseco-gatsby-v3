@@ -8,7 +8,7 @@ import {
   List,
   DateTime,
   Title,
-  Excerpt,
+  Excerpt
 } from './BlogList.style';
 import { Tag } from './../../components';
 
@@ -25,7 +25,7 @@ const getMonth = (month: number) => {
     'Septiembre',
     'Octubre',
     'Noviembre',
-    'Diciembre',
+    'Diciembre'
   ];
 
   return months[month - 1];
@@ -38,18 +38,18 @@ const FormatDate = (date: string, fn: Function) => {
   return fn({
     day: dayAsHuman,
     month: monthAsHuman,
-    year: parseInt(year, 10),
+    year: parseInt(year, 10)
   });
 };
 
 const FormatDesktop = ({
   day,
   month,
-  year,
+  year
 }: {
-  day: number;
-  month: number;
-  year: number;
+  day: number,
+  month: number,
+  year: number
 }) => {
   return day + ' de ' + month + ' de ' + year;
 };
@@ -57,11 +57,11 @@ const FormatDesktop = ({
 const FormatMobile = ({
   day,
   month,
-  year,
+  year
 }: {
-  day: number;
-  month: number;
-  year: number;
+  day: number,
+  month: number,
+  year: number
 }) => {
   return day + ' ' + month + ' ' + year;
 };

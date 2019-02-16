@@ -6,7 +6,7 @@ interface IProps {
   image: string;
 }
 
-const Cover = ({ children, image }: { children: any; image: string }) => (
+const Cover = ({ children, image }: IProps) => (
   <Container id="cover-container">
     <BackgroundImage url={image} />
     {children}

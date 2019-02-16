@@ -9,7 +9,10 @@ export const Container = styled.section`
   width: 100%;
 `;
 
-export const BackgroundImage = styled.div<{ url: string }>`
+export const BackgroundImage =
+  styled.div <
+  { url: string } >
+  `
   background-image: url('${props => props.url}');
   background-size:cover;
   height: 100%;

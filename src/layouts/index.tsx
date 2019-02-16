@@ -7,7 +7,7 @@ import {
   CoverTitle,
   Footer,
   Header,
-  MouseScroll,
+  MouseScroll
 } from './../components';
 import image from './../assets/img/cover.jpg';
 import './index.css';
@@ -21,7 +21,7 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps> {
     super(props);
   }
 
-  public render() {
+  render() {
     return (
       <ThemeProvider theme={theme}>
         <div>
@@ -31,8 +31,8 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps> {
               { name: 'description', content: 'Desarrollo Web | Music & More' },
               {
                 name: 'keywords',
-                content: 'React, Javascript, Desarrollo Web, CSS',
-              },
+                content: 'React, Javascript, Desarrollo Web, CSS'
+              }
             ]}
           >
             <html lang="es" />

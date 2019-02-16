@@ -15,8 +15,8 @@ const NotFoundPage = ({ children }: { children: any }) => (
           { name: 'description', content: 'Desarrollo Web | Music & More' },
           {
             name: 'keywords',
-            content: 'React, Javascript, Desarrollo Web, CSS',
-          },
+            content: 'React, Javascript, Desarrollo Web, CSS'
+          }
         ]}
       >
         <html lang="es" />

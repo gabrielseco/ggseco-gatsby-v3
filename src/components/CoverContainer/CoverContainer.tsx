@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-const CoverContainer = styled.section<{ center: boolean }>`
+const CoverContainer =
+  styled.section <
+  { center: boolean } >
+  `
   display: table-cell;
   max-width: 90rem;
   position: relative;
