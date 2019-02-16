@@ -1,10 +1,10 @@
-const path = require('path')
+const path = require('path');
 
-exports.createPages = (({graphql, actions}) => {
-  const { createPage } = actions
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions;
 
-  return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve('src/templates/BlogPost.tsx')
+  return new Promise(() => {
+    const blogPostTemplate = path.resolve('src/templates/BlogPost.tsx');
 
     resolve(
       graphql(
@@ -22,9 +22,9 @@ exports.createPages = (({graphql, actions}) => {
           }
         `
       ).then(result => {
-        result.data.allMarkdownRemark.edges.forEach(({node}) => {
+        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
           const slug = node.frontmatter.path;
-          const path = "blog" + slug;
+          const path = 'blog' + slug;
 
           createPage({
             path,
@@ -32,11 +32,11 @@ exports.createPages = (({graphql, actions}) => {
             context: {
               pathSlug: slug
             }
-          })
+          });
 
-          resolve()
-        })
+          resolve();
+        });
       })
-    )
-  })
-})
+    );
+  });
+};

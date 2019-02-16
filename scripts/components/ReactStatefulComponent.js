@@ -13,12 +13,12 @@ class ReactStatefulComponent extends Component {
 
     const styleType = {
       fileExtension: '.style.ts'
-    }
+    };
 
     const tsxType = {
       fileExtension: '.tsx',
       parser: new TypescriptDefaultParser()
-    }
+    };
 
     const componentFolder = this.getComponentFolder();
 

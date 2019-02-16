@@ -14,12 +14,12 @@ class ReactStatelessComponent extends Component {
     const styleType = {
       fileExtension: '.style.ts',
       parser: new TypescriptDefaultParser()
-    }
+    };
 
     const tsxType = {
       fileExtension: '.tsx',
       parser: new TypescriptDefaultParser()
-    }
+    };
 
     const componentFolder = this.getComponentFolder();
     this.add(tsxType, this.defaultReactComponent(componentFolder));
@@ -50,7 +50,7 @@ class ReactStatelessComponent extends Component {
   defaultStyles() {
     return `
       import styled from 'styled-components';
-    `
+    `;
   }
 }
 
