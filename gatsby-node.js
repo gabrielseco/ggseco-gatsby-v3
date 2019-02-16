@@ -3,7 +3,7 @@ const path = require('path');
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  return new Promise(() => {
+  return new Promise(resolve => {
     const blogPostTemplate = path.resolve('src/templates/BlogPost.tsx');
 
     resolve(
