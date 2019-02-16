@@ -27,7 +27,7 @@ interface IndexPageProps {
   };
 }
 
-export default class extends React.Component<IndexPageProps> {
+export default class Index extends React.Component<IndexPageProps> {
   constructor(props: IndexPageProps, context: any) {
     super(props, context);
   }

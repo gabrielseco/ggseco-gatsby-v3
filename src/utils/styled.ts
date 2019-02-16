@@ -4,7 +4,7 @@ const sizes: { [key: string]: number } = {
   giant: 1200,
   large: 900,
   medium: 600,
-  small: 320,
+  small: 320
 };
 
 interface IMedia {
@@ -24,5 +24,5 @@ export const media: IMedia = Object.keys(sizes).reduce(
     `;
     return accumulator;
   },
-  {} as IMedia,
+  {} as IMedia
 );

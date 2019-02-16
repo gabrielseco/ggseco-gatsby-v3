@@ -6,7 +6,7 @@ const CoverTitle = ({
   title,
   description,
   separator = true,
-  center = false,
+  center = false
 }: {
   title: string;
   description: any;

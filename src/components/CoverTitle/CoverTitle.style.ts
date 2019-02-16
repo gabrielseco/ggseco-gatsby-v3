@@ -15,7 +15,7 @@ export const Title = styled.h1`
 `;
 
 const descriptionColors = {
-  text: '#b3b3b3',
+  text: '#b3b3b3'
 };
 
 export const Description = styled.p<{ center: boolean }>`

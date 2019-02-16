@@ -21,7 +21,7 @@ let easeInOutQuad = function(
   currentTime: number,
   start: number,
   change: number,
-  duration: number,
+  duration: number
 ) {
   currentTime /= duration / 2;
   if (currentTime < 1) return (change / 2) * currentTime * currentTime + start;

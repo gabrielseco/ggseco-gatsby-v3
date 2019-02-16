@@ -7,7 +7,7 @@ import {
   FormLabel,
   FormControl,
   Button,
-  ButtonContainer,
+  ButtonContainer
 } from './FormContact.style';
 import { scrollTo } from './../../utils/animations';
 import { getBackendUrl } from './../../utils/rest';
@@ -61,11 +61,11 @@ export default class FormContact extends React.Component<any, IState> {
         email: '',
         subject: '',
         body: '',
-        score: 0,
+        score: 0
       },
       messageAlert: '',
       error: false,
-      success: false,
+      success: false
     };
   }
 
@@ -83,8 +83,8 @@ export default class FormContact extends React.Component<any, IState> {
             ...state,
             form: {
               ...state.form,
-              score: response.data.score,
-            },
+              score: response.data.score
+            }
           };
         });
       })
@@ -98,7 +98,7 @@ export default class FormContact extends React.Component<any, IState> {
       .post(getContactsPath(), this.state.form)
       .then(() => {
         this.setState({
-          success: true,
+          success: true
         });
         const el = document.querySelector('#form-contact');
         scrollTo(el.clientHeight - 75, 1000);
@@ -108,7 +108,7 @@ export default class FormContact extends React.Component<any, IState> {
         const assignedMessage = getMessage(message);
         this.setState({
           error: true,
-          messageAlert: assignedMessage,
+          messageAlert: assignedMessage
         });
         const el = document.querySelector('#form-contact');
         scrollTo(el.clientHeight - 75, 1000);
@@ -117,14 +117,14 @@ export default class FormContact extends React.Component<any, IState> {
 
   onChange = (evt: React.FormEvent<HTMLInputElement>) => {
     const dynamicStateEvent = {
-      [evt.currentTarget.name]: evt.currentTarget.value,
+      [evt.currentTarget.name]: evt.currentTarget.value
     };
     this.setState(state => ({
       ...state,
       form: {
         ...state.form,
-        ...dynamicStateEvent,
-      },
+        ...dynamicStateEvent
+      }
     }));
   };
 

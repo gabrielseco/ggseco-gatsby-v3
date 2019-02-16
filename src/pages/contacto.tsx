@@ -8,13 +8,13 @@ import {
   Header,
   FormContact,
   MouseScroll,
-  Footer,
+  Footer
 } from './../components';
 import image from './../assets/img/contact.jpg';
 import './../layouts/index.css';
 
-class Contacto extends React.PureComponent<any> {
-  public render() {
+class Contacto extends React.PureComponent {
+  render() {
     return (
       <ThemeProvider theme={theme}>
         <div>
@@ -24,8 +24,8 @@ class Contacto extends React.PureComponent<any> {
               { name: 'description', content: 'Desarrollo Web | Music & More' },
               {
                 name: 'keywords',
-                content: 'React, Javascript, Desarrollo Web, CSS',
-              },
+                content: 'React, Javascript, Desarrollo Web, CSS'
+              }
             ]}
           >
             <html lang="es" />
