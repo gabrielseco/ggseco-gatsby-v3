@@ -10,8 +10,9 @@ Plus it was the third time I tried to give wordpress for other technology Gatsby
 
 ## Technologies
 
-* GatsbyJS
-* Netlify
-* Typescript
-* React
-* Styled Components
+- GatsbyJS
+- Netlify
+- Typescript
+- React
+- Styled Components
+- Eslint with Typescript FINALLY
