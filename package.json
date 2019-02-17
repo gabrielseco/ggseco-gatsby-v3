@@ -56,7 +56,7 @@
   },
   "contributors": [],
   "lint-staged": {
-    "*.{ts, tsx}": [
+    "*.{js, jsx, ts, tsx}": [
       "npm run lint -- --fix --staged",
       "git add"
     ]
