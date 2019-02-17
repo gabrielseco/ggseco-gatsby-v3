@@ -32,7 +32,7 @@ const Template = (props: any) => {
           meta={[
             {
               name: 'description',
-              content: props.data.markdownRemark.frontmatter.description
+              content: props.data.markdownRemark.frontmatter.excerpt
             },
             {
               name: 'keywords',
@@ -52,7 +52,7 @@ const Template = (props: any) => {
             },
             {
               name: 'twitter:description',
-              content: props.data.markdownRemark.frontmatter.description
+              content: props.data.markdownRemark.frontmatter.excerpt
             },
             {
               name: 'twitter:image',
@@ -87,6 +87,7 @@ export const query = graphql`
       frontmatter {
         title
         tags
+        excerpt
         subtitle
         featured_image {
           publicURL
