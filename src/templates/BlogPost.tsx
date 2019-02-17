@@ -37,6 +37,26 @@ const Template = (props: any) => {
             {
               name: 'keywords',
               content: 'React, Javascript, Desarrollo Web, CSS'
+            },
+            {
+              name: 'twitter:card',
+              content: 'summary_large_image'
+            },
+            {
+              name: 'twitter:creator',
+              content: '@GGarciaSeco10'
+            },
+            {
+              name: 'twitter:title',
+              content: props.data.markdownRemark.frontmatter.title
+            },
+            {
+              name: 'twitter:description',
+              content: props.data.markdownRemark.frontmatter.description
+            },
+            {
+              name: 'twitter:image',
+              content: image
             }
           ]}
         />
