@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gabriel García Seco - Desarrollo Web | Music &amp; More`
+    title: `Gabriel García Seco - Desarrollo Web | Music &amp; More`,
+    siteUrl: 'https://ggseco.com'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -37,6 +37,16 @@ const Template = (props: any) => {
             {
               name: 'keywords',
               content: 'React, Javascript, Desarrollo Web, CSS'
+            },
+            {
+              name: 'twitter:card',
+              content: 'summary_large_image'
+            },
+            {
+              name: 'twitter:image',
+              content: `${props.data.site.siteMetadata.siteUrl}/blog${
+                props.data.markdownRemark.frontmatter.path
+              }twitter-card.jpg`
             }
           ]}
         />
@@ -62,6 +72,11 @@ const Template = (props: any) => {
 
 export const query = graphql`
   query BlogPostQuery($pathSlug: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html
       frontmatter {
@@ -71,6 +86,7 @@ export const query = graphql`
         featured_image {
           publicURL
         }
+        path
       }
     }
   }
