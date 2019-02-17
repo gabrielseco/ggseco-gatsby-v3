@@ -43,10 +43,20 @@ const Template = (props: any) => {
               content: 'summary_large_image'
             },
             {
+              name: 'twitter:creator',
+              content: '@GGarciaSeco10'
+            },
+            {
+              name: 'twitter:title',
+              content: props.data.markdownRemark.frontmatter.title
+            },
+            {
+              name: 'twitter:description',
+              content: props.data.markdownRemark.frontmatter.description
+            },
+            {
               name: 'twitter:image',
-              content: `${props.data.site.siteMetadata.siteUrl}/blog${
-                props.data.markdownRemark.frontmatter.path
-              }twitter-card.jpg`
+              content: image
             }
           ]}
         />
@@ -72,11 +82,6 @@ const Template = (props: any) => {
 
 export const query = graphql`
   query BlogPostQuery($pathSlug: String!) {
-    site {
-      siteMetadata {
-        siteUrl
-      }
-    }
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html
       frontmatter {
@@ -86,7 +91,6 @@ export const query = graphql`
         featured_image {
           publicURL
         }
-        path
       }
     }
   }
