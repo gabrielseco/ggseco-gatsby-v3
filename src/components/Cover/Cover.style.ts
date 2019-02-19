@@ -11,6 +11,7 @@ export const Container = styled.section`
 
 export const BackgroundImage = styled.div<{ url: string }>`
   background-image: url('${props => props.url}');
+  background-position: center center;
   background-size:cover;
   height: 100%;
   position: absolute;
